@@ -1,0 +1,23 @@
+package org.cbsl.pageObjects;
+
+import org.cbsl.utility.WebUtill;
+import org.openqa.selenium.support.PageFactory;
+
+public class PIMPage {
+	
+	
+	
+	WebUtill utill;
+	
+	public PIMPage(WebUtill utill) {
+		this.utill=utill;
+		PageFactory.initElements(utill.getDriver(), this);
+	}
+	 
+	
+	public void btnAdd() {
+	utill.click(null);	
+		
+	}
+
+}

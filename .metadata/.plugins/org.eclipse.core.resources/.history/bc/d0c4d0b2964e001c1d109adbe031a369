@@ -1,0 +1,96 @@
+package org.cbsl.pageObjects.pim;
+
+import org.cbsl.utility.WebUtill;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PersonalDetailsPage {
+
+	@FindBy(xpath = "//input[@id='btnSave']") private WebElement btnEdit_Save;t
+	@FindBy(xpath = "//input[@id='personal_txtLicenNo']") private WebElement txtDLNumber;
+	@FindBy(xpath = "//input[@id='personal_txtLicExpDate']") private WebElement txtDLExpDate;
+	@FindBy(xpath = "//input[@id='personal_txtNICNo']") private WebElement txtSSNNumber;
+	@FindBy(xpath = "//input[@id='personal_txtSINNo']") private WebElement txtSINNum;
+	@FindBy(xpath = "//input[@id='personal_optGender_1']") private WebElement selMale;
+	@FindBy(xpath = "//input[@id='personal_optGender_2']") private WebElement selFemale;
+	@FindBy(xpath = "//select[@id='personal_cmbMarital']") private WebElement selMaritalStatus;
+	@FindBy(xpath = "//select[@id='personal_cmbNation']") private WebElement seleNationality;
+	@FindBy(xpath = "//input[@id='personal_DOB']") private WebElement txtDOB;
+	@FindBy(xpath = "//input[@id='personal_txtEmpNickName']") private WebElement txtNickName;
+	@FindBy(xpath = "//input[@id='personal_chkSmokeFlag']") private WebElement chkbxSmoker;
+
+
+	WebUtill utill;
+	public PersonalDetailsPage(WebUtill utill) {
+		this.utill=utill;
+		PageFactory.initElements(utill.getDriver(), this);
+
+	}
+
+	public void clickEditbtn() {
+		utill.click(btnEdit_Save);	
+	}
+
+	public void enterLicenNumber(String licenNumber) {
+		utill.clear(txtDLNumber);
+		utill.input(txtDLNumber, licenNumber);
+	}
+
+	public void enterLicenExpDate(String yyyy_mm_dd_ExpDate) {
+		utill.clear(txtDLExpDate);
+		utill.input(txtDLExpDate, yyyy_mm_dd_ExpDate);
+	}
+
+	public void enterSSN_Number(String ssnString ) {
+		utill.clear(txtSSNNumber);
+		utill.input(txtSSNNumber, ssnString);
+	}
+
+	public void enterSIN_Number(String sin_Num) {
+		utill.clear(txtSINNum);
+		utill.input(txtSINNum, sin_Num);
+	}
+
+	public void selectGender(char select_M_Or_F) {
+		switch (select_M_Or_F) {
+		case 'M':
+			utill.click(selMale);
+
+			break;
+		case 'F':
+			utill.click(selFemale);
+
+		default:
+			System.out.println("Please Enter M or F");
+		}
+	}
+
+	public void enterDOB(String selDOB) {
+		utill.clear(txtDOB);
+		utill.input(txtDOB, selDOB);
+	}
+
+	public void enterNickName(String nickName) {
+		utill.clear(txtNickName);
+		utill.input(txtNickName, nickName);;
+	}
+
+	public void selChkBxSmoker(char sel_Y_or_N) {
+		switch(sel_Y_or_N) {
+		case 'Y':
+			utill.click(chkbxSmoker);
+			break;
+		case 'N':
+			System.out.println("Smoker Check Box is unselected...");
+			break;
+		default:
+			System.out.println("You have entered wrong char. Please select Y or N. And By Default smker is unchecked........... ");
+		}
+	}
+
+	public void clickOnSavebtn() {
+		utill.click(btnEdit_Save);
+	}
+
+}

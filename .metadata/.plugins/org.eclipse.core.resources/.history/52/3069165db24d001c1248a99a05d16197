@@ -1,0 +1,21 @@
+package org.cbsl.testcases;
+
+import org.cbsl.pageObjects.LoginPage;
+import org.cbsl.utility.BaseClass;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TC_LoginTest extends BaseClass {
+	
+	LoginPage loginPg;
+	
+	@Test
+	public void loginTest() {
+		loginPg =new LoginPage(utill);
+		loginPg.setPwd("admin123");
+		loginPg.setUserID("Admin");
+		loginPg.clickLogin();
+		Assert.assertEquals(false, true);
+	}
+
+}

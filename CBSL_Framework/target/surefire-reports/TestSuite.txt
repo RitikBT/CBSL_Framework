@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.212 s <<< FAILURE! - in TestSuite
+org.cbsl.testcases.TC_AddEmployee.loginTest  Time elapsed: 16.073 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at org.cbsl.testcases.TC_AddEmployee.loginTest(TC_AddEmployee.java:36)
+

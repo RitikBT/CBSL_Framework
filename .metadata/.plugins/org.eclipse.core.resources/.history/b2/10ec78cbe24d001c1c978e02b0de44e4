@@ -1,0 +1,18 @@
+package org.cbsl.utility;
+
+import java.io.File;
+
+public class Config {
+	
+	
+	public void m1() {
+		
+	File file=	new File("");
+	
+		
+		
+	}
+	
+	
+
+}
