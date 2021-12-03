@@ -14,8 +14,8 @@ public class TC_AddEmployee extends BaseClass {
 	@Test
 	public void loginTest() {
 		loginPg =new LoginPage(utill);
-		loginPg.setPwd("admin123");
-		loginPg.setUserID("Admin");
+		loginPg.setPwd(utill.getProperty("userPwd"));
+		loginPg.setUserID(utill.getProperty("userID"));
 		loginPg.clickLogin();
 		pimPage= new PIMPage(utill);
 		pimPage.navigateToPIM();
@@ -33,7 +33,12 @@ public class TC_AddEmployee extends BaseClass {
 		personalDetails.selectGender('M');
 		personalDetails.selChkBxSmoker('N');
 		personalDetails.clickOnSavebtn();
-		Assert.assertEquals(true, false);
+		
+	}
+	
+	@Test
+	public void mYTest() {
+		System.out.println("Hello Ritik ....Parallel Testing Demo");
 	}
 
 }

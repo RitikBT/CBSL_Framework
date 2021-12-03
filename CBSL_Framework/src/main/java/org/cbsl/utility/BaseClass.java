@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -25,12 +26,15 @@ public class BaseClass {
 	protected LoginPage loginPg;
 	protected PIMPage pimPage;
 	protected PersonalDetailsPage personalDetails;
-
-	protected WebUtill utill=new WebUtill();
-	
 	private ExtentHtmlReporter htmlReporter;
 	private ExtentReports extent;
 	private ExtentTest test;
+	
+	
+	protected WebUtill utill=new WebUtill();
+	protected Config conPro= new Config();
+	
+	
 
 	@BeforeTest
 	public void setReport() {
@@ -50,11 +54,11 @@ public class BaseClass {
 		htmlReporter.config().setTheme(Theme.STANDARD);			
 	}
 
-
+	@Parameters("browser")
 	@BeforeMethod(alwaysRun =true )
-	public void launch(Method methodName) {
-		utill.launchBrowser("chrome");
-		utill.setUrl("https://opensource-demo.orangehrmlive.com/");
+	public void launch(Method methodName,String browser) {
+		utill.launchBrowser(browser);
+		utill.setUrl(utill.getProperty("url"));//https://opensource-demo.orangehrmlive.com/
 		test=extent.createTest(methodName.getName());
 	}
 
@@ -83,6 +87,7 @@ public class BaseClass {
 		} 
 		else if(result.getStatus() == ITestResult.SUCCESS)
 		{
+			
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
 		}
 		utill.closeBrowser();

@@ -8,9 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 	@FindBy(xpath = "//input[@id='txtUsername']") 	private WebElement txtUserID;
-
 	@FindBy(xpath = "//input[@id='txtPassword']") private WebElement txtPwd;
-
 	@FindBy(xpath="//input[@id='btnLogin']") private WebElement btnLogin;
 
 	WebUtill utill;

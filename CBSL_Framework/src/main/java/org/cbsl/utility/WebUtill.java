@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
+ 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.Dimension;
@@ -15,11 +15,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WebUtill {
+public class WebUtill extends Config {
 	
 	private static  WebDriver driver=null;
 
@@ -47,6 +48,9 @@ public class WebUtill {
 		}else if (browserName.equalsIgnoreCase("opera")) {
 			WebDriverManager.operadriver().setup();
 			driver = new OperaDriver();
+		}else if (browserName.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
 		}
 		else
 			System.out.println("Please Enter Browser Name: Chrome or Firefox");

@@ -10,10 +10,11 @@ public class Config {
 	
 	private FileInputStream fileInput;
 	private Properties prop;
+	private String fileName="src/test/resources/config.properties";
 	
 	public void propertiesFile() {
 		
-		File file = new File("src/test/resources/config.properties");
+		File file = new File(fileName);
 		  
 		 fileInput = null;
 		try {
@@ -35,8 +36,8 @@ public class Config {
 		if(fileInput==null) {
 			propertiesFile();
 		}
-	return 	prop.getProperty(keyName);
-			
+	 	String a= prop.getProperty(keyName);
+			return a;
 	}
 	
 	

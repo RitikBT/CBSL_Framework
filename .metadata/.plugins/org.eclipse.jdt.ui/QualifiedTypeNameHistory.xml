@@ -30,7 +30,6 @@
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="org.cbsl.pageObjects.PIMPage"/>
     <fullyQualifiedTypeName name="org.cbsl.utility.WebUtill"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
@@ -40,4 +39,5 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="org.cbsl.pageObjects.pim.PersonalDetailsPage"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

@@ -1,5 +1,0 @@
-package org.cbsl.pageObjects;
-
-public class LoginPage {
-
-}
