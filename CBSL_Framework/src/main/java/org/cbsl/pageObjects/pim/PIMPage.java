@@ -22,7 +22,7 @@ public class PIMPage {
 	}
 	 
 	public void navigateToPIM() {
-		utill.clear(linkPIM);
+		utill.click(linkPIM);
 	}
 	
 	public void clickAddbtn() {

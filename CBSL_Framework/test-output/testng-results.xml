@@ -1,117 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="144" started-at="2022-02-21T11:49:09 IST" finished-at="2022-02-21T11:49:09 IST">
+  <suite name="Suite1" duration-ms="148049" started-at="2022-02-21T17:16:59 IST" finished-at="2022-02-21T17:19:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="144" started-at="2022-02-21T11:49:09 IST" finished-at="2022-02-21T11:49:09 IST">
+    <test name="ChromeTest" duration-ms="148049" started-at="2022-02-21T17:16:59 IST" finished-at="2022-02-21T17:19:27 IST">
       <class name="org.cbsl.testcases.TC_AddEmployee">
-        <test-method status="PASS" signature="setReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@5b1669c0]" name="setReport" is-config="true" duration-ms="106" started-at="2022-02-21T11:49:09 IST" finished-at="2022-02-21T11:49:09 IST">
+        <test-method status="PASS" signature="setReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@1530c739]" name="setReport" is-config="true" duration-ms="92" started-at="2022-02-21T17:16:59 IST" finished-at="2022-02-21T17:16:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReport -->
-        <test-method status="FAIL" signature="launch(java.lang.reflect.Method,java.lang.String)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@5b1669c0]" name="launch" is-config="true" duration-ms="-1645424349487" started-at="2022-02-21T11:49:09 IST" finished-at="1970-01-01T05:30:00 IST">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\288568\AppData\Local\Temp\testng-eclipse--1521664428\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\288568\AppData\Local\Temp\testng-eclipse--1521664428\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="launch(java.lang.reflect.Method,java.lang.String)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@1530c739]" name="launch" is-config="true" duration-ms="45989" started-at="2022-02-21T17:16:59 IST" finished-at="2022-02-21T17:17:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.cbsl.testcases.TC_AddEmployee.testcase001_loginTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="SKIP" signature="testcase001_loginTest()[pri:1, instance:org.cbsl.testcases.TC_AddEmployee@5b1669c0]" name="testcase001_loginTest" duration-ms="0" started-at="2022-02-21T11:49:09 IST" finished-at="2022-02-21T11:49:09 IST">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\288568\AppData\Local\Temp\testng-eclipse--1521664428\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\288568\AppData\Local\Temp\testng-eclipse--1521664428\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="testcase001_loginTest()[pri:1, instance:org.cbsl.testcases.TC_AddEmployee@1530c739]" name="testcase001_loginTest" duration-ms="101368" started-at="2022-02-21T17:17:45 IST" finished-at="2022-02-21T17:19:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase001_loginTest -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@5b1669c0]" name="getResult" is-config="true" duration-ms="-1645424349498" started-at="2022-02-21T11:49:09 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@1530c739]" name="getResult" is-config="true" duration-ms="9" started-at="2022-02-21T17:19:27 IST" finished-at="2022-02-21T17:19:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase001_loginTest status=SUCCESS method=TC_AddEmployee.testcase001_loginTest()[pri:1, instance:org.cbsl.testcases.TC_AddEmployee@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@5b1669c0]" name="endReport" is-config="true" duration-ms="2" started-at="2022-02-21T11:49:09 IST" finished-at="2022-02-21T11:49:09 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@1530c739]" name="endReport" is-config="true" duration-ms="553" started-at="2022-02-21T17:19:27 IST" finished-at="2022-02-21T17:19:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- org.cbsl.testcases.TC_AddEmployee -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite1 -->
 </testng-results>

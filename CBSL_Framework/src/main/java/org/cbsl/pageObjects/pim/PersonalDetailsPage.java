@@ -6,11 +6,15 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+import org.apache.log4j.Logger;
+import org.cbsl.utility.BaseClass;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
+import com.aventstack.extentreports.Status;
 
 public class PersonalDetailsPage {
 
@@ -29,7 +33,10 @@ public class PersonalDetailsPage {
 	@FindBy(id="btnEditCustom") private WebElement btEdit_CustomField;
 	@FindBy(name="custom1") private WebElement bloodTypeDropDown;
 	@FindBy(id="btnAddAttachment") private WebElement btnAddAttachment;
-	@FindBy(name="ufile") private WebElement uploadFileBtn;
+	@FindBy(xpath= "//input[@id='ufile']") private WebElement chooseFileBtn;
+	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn; 
+
+	private final static Logger logger=Logger.getLogger(PersonalDetailsPage.class);
 
 
 	WebUtill utill;
@@ -90,9 +97,12 @@ public class PersonalDetailsPage {
 		switch(sel_Y_or_N) {
 		case 'Y':
 			utill.click(chkbxSmoker);
+			BaseClass.test.log(Status.PASS, "Smoker checkBox is checked");
+			logger.info("Smoker Check Box is selected...");
 			break;
 		case 'N':
-			System.out.println("Smoker Check Box is unselected...");
+			BaseClass.test.log(Status.PASS, "Smoker checkBox is unchecked");
+			logger.info("Smoker Check Box is unselected...");
 			break;
 		default:
 			System.out.println("You have entered wrong char. Please select Y or N. otherwise smoker is unchecked by default........... ");
@@ -111,15 +121,16 @@ public class PersonalDetailsPage {
 
 	}
 
-	public void fileUpload() throws AWTException {
+	public void fileUpload() throws AWTException, Exception {
+		
+	//	utill.jsUtil.scrollUpPage(2000);
 		utill.click(btnAddAttachment);
-		utill.click(uploadFileBtn);
+		Thread.sleep(3000);
+		utill.click(chooseFileBtn);
 
-		StringSelection ss = new StringSelection("C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot (2).png");
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-
-		Robot robot= new Robot();
-		robot.keyPress(KeyEvent.VK_ENTER);
+		utill.uploadFile("C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot.png");
+		
+		utill.click(uploadBtn);
 
 	}
 

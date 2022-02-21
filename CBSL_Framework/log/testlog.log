@@ -13,3 +13,176 @@
 2022-02-21 11:49:53,839 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
 2022-02-21 11:49:55,712 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f8c15c61fe99e68758dc1e11c2d639c5)] -> xpath: //input[@id='btnLogin']]
 2022-02-21 11:49:55,712 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 14:43:36,040 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 14:43:44,209 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 14:43:44,632 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 14:43:44,920 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 14:44:22,828 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 14:44:22,829 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 14:47:43,016 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 14:48:25,954 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 14:48:46,103 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 14:48:49,295 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 14:48:56,081 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> xpath: //input[@id='btnSave']]
+2022-02-21 14:49:00,361 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> xpath: //input[@id='btnSave']]
+2022-02-21 14:49:04,612 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 14:49:07,462 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 14:49:10,037 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 14:49:12,071 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 14:49:14,380 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 14:49:15,982 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 14:49:21,212 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> xpath: //input[@id='btnSave']]
+2022-02-21 14:49:32,561 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> id: btnEditCustom]
+2022-02-21 14:49:40,630 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (61f571dc9cfa04586df59d8082fd44c7)] -> id: btnAddAttachment]
+2022-02-21 14:50:25,508 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-21 15:51:57,290 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 15:52:02,777 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 15:52:03,170 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 15:52:03,449 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 15:52:40,183 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 15:52:40,184 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 15:52:43,040 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 15:53:14,123 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 15:53:14,360 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 15:53:14,575 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 15:53:17,407 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> xpath: //input[@id='btnSave']]
+2022-02-21 15:53:17,559 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> xpath: //input[@id='btnSave']]
+2022-02-21 15:53:17,886 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 15:53:18,264 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 15:53:18,581 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 15:53:18,891 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 15:53:19,249 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 15:53:19,394 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 15:53:19,395 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-21 15:53:21,532 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> xpath: //input[@id='btnSave']]
+2022-02-21 15:53:21,703 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> id: btnEditCustom]
+2022-02-21 15:53:22,092 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (555ff76237c59e4b28ac7f9a36b9c806)] -> id: btnAddAttachment]
+2022-02-21 15:53:25,422 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-21 16:13:01,435 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 16:13:09,330 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 16:13:09,748 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 16:13:10,055 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 16:13:48,290 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 16:13:48,290 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 16:15:35,397 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (832ba2281e05ea46eade04d13cd5f4c8)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 16:16:06,885 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 16:16:07,147 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 16:16:07,398 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 16:16:11,007 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (832ba2281e05ea46eade04d13cd5f4c8)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:16:11,172 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (832ba2281e05ea46eade04d13cd5f4c8)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:16:11,495 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 16:16:11,873 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 16:16:12,175 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 16:16:12,496 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 16:16:12,876 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 16:16:13,052 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (832ba2281e05ea46eade04d13cd5f4c8)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 16:16:13,053 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-21 16:16:15,520 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (832ba2281e05ea46eade04d13cd5f4c8)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:16:15,692 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (832ba2281e05ea46eade04d13cd5f4c8)] -> id: btnEditCustom]
+2022-02-21 16:17:11,656 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-21 16:48:34,361 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 16:48:38,545 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 16:48:38,757 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 16:48:38,935 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 16:49:15,085 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 16:49:15,085 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 16:49:24,756 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 16:49:55,787 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 16:49:55,907 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 16:49:56,011 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 16:49:58,792 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:49:58,879 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:49:59,040 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 16:49:59,210 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 16:49:59,370 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 16:49:59,523 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 16:49:59,676 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 16:49:59,748 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 16:49:59,749 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-21 16:50:01,704 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:50:01,781 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> id: btnEditCustom]
+2022-02-21 16:50:45,569 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (09f805032d2ed8039455c06caeb4ff27)] -> id: btnAddAttachment]
+2022-02-21 16:52:18,424 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-21 16:53:45,261 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 16:53:49,957 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 16:53:50,258 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 16:53:50,456 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 16:54:27,097 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 16:54:27,098 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 16:54:56,311 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 16:55:27,235 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 16:55:27,386 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 16:55:27,496 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 16:55:30,516 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:55:30,612 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:55:30,777 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 16:55:30,969 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 16:55:31,134 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 16:55:31,299 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 16:55:31,497 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 16:55:31,576 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 16:55:31,577 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-21 16:55:33,541 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> xpath: //input[@id='btnSave']]
+2022-02-21 16:55:33,612 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> id: btnEditCustom]
+2022-02-21 16:57:00,596 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (889e3386afd6bf676d4bbcd3ff5df281)] -> id: btnAddAttachment]
+2022-02-21 16:58:18,750 - org.cbsl.utility.WebUtill -INFO - ElementNotVisibleException occured try again on click org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD138MBF9', ip: '192.168.83.230', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\288568\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 889e3386afd6bf676d4bbcd3ff5df281
+2022-02-21 16:59:02,038 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-21 17:09:38,347 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 17:09:43,013 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 17:09:43,196 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 17:09:43,367 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 17:10:19,823 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 17:10:19,823 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 17:10:22,307 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 17:10:53,271 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 17:10:53,425 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 17:10:53,587 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 17:10:55,931 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> xpath: //input[@id='btnSave']]
+2022-02-21 17:10:56,021 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> xpath: //input[@id='btnSave']]
+2022-02-21 17:10:56,194 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 17:10:56,386 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 17:10:56,570 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 17:10:56,745 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 17:10:56,937 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 17:10:57,009 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 17:10:57,009 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-21 17:10:58,913 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> xpath: //input[@id='btnSave']]
+2022-02-21 17:10:58,985 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> id: btnEditCustom]
+2022-02-21 17:13:09,268 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9784cb522150da251d00ac6ebcb3c648)] -> id: btnAddAttachment]
+2022-02-21 17:13:24,238 - org.cbsl.utility.WebUtill -INFO - ElementNotVisibleException occured try again on click org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CD138MBF9', ip: '192.168.83.230', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\288568\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55467}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9784cb522150da251d00ac6ebcb3c648
+2022-02-21 17:14:31,221 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-21 17:17:01,853 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-21 17:17:08,418 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-21 17:17:08,626 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-21 17:17:08,792 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-21 17:17:45,630 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-21 17:17:45,630 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-21 17:17:48,074 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-21 17:18:19,698 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-21 17:18:19,872 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-21 17:18:19,989 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-21 17:18:22,182 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> xpath: //input[@id='btnSave']]
+2022-02-21 17:18:22,287 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> xpath: //input[@id='btnSave']]
+2022-02-21 17:18:22,445 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-21 17:18:22,634 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-21 17:18:22,817 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-21 17:18:22,994 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-21 17:18:23,184 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-21 17:18:23,260 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-21 17:18:23,261 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-21 17:18:25,322 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> xpath: //input[@id='btnSave']]
+2022-02-21 17:18:25,400 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> id: btnEditCustom]
+2022-02-21 17:18:39,512 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> id: btnAddAttachment]
+2022-02-21 17:19:26,999 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled

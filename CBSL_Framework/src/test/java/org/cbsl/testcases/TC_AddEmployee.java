@@ -13,7 +13,7 @@ public class TC_AddEmployee extends BaseClass {
 	private static final Logger logger = Logger.getLogger(TC_AddEmployee.class);
 	
 	@Test(priority = 1)
-	public void testcase001_loginTest() throws AWTException {
+	public void testcase001_loginTest() throws Exception {
 		
 		pimPage= new PIMPage(utill);
 		pimPage.navigateToPIM();

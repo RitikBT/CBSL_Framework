@@ -1,5 +1,10 @@
 package org.cbsl.utility;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -10,13 +15,12 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.log4j.Logger;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.InvalidArgumentException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -24,6 +28,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
@@ -37,7 +42,6 @@ public class WebUtill extends Config {
 	public static  final Logger logger = Logger.getLogger(WebUtill.class);
 
 	private   WebDriver driver=null;
-	private JavaScriptUtil jsUtil=null;
 
 
 	public   WebDriver getDriver() {
@@ -69,9 +73,12 @@ public class WebUtill extends Config {
 			BaseClass.test.log(Status.PASS, "Click on button");
 			logger.info("Click on "+we);
 		}
-		catch (ElementNotVisibleException e) {
+		catch(InvalidArgumentException e1) {
+			new Actions(driver).click(we).build().perform();
+		}
+		catch (NoSuchElementException e) {
 			logger.info("ElementNotVisibleException occured try again on click "+e);
-			jsUtil.jsClick(we);
+			jsClick(we);
 		}
 	}
 
@@ -97,7 +104,7 @@ public class WebUtill extends Config {
 		}
 		catch (WebDriverException e) {
 			logger.info(e);
-			jsUtil.jsSetTextBoxValue(we, inputData);
+			jsSetTextBoxValue(we, inputData);
 
 		}
 		return inputData;	
@@ -318,7 +325,7 @@ public class WebUtill extends Config {
 	}
 
 	public void clear(WebElement we) {
-		we.click();
+		we.clear();
 	}
 	public String takeSnapshot(String methodName) throws IOException {
 
@@ -353,5 +360,76 @@ public class WebUtill extends Config {
 		 ***/
 	}
 
+	
+	public   JavascriptExecutor getJSExecutor(){
+		return ((JavascriptExecutor) driver);
+		
+	}
+
+	
+
+	/**
+	 * This method is for scrolling the page up
+	 */
+	public void jsScrollUpPage(int numberOfPixels) {
+		getJSExecutor().executeScript("window.scrollTo("+numberOfPixels+ ",0)");
+	}
+	
+	/**
+	 * This method is for scrolling the page down
+	 */ 
+	public void jsScrollDownPage(int numberOfPixels) {
+		getJSExecutor().executeScript("window.scrollTo(0,\""+numberOfPixels+"\")");
+
+	}
+	
+	/**
+	 * This method is used to scroll the page till the exact web element provided.
+	 * @param we Web element name 
+	 */
+//	public void scrollingToElementOfAPage(WebElement we) {
+//
+//		getJSExecutor().executeScript(JS_SCROLL_CODE, we);
+//	}
+
+	
+
+	/**
+	 * This method is used to click on the particular element.
+	 * @param element Web Element
+	 */
+	public void jsClick(WebElement element) {
+		getJSExecutor().executeScript("arguments[0].click()", element);
+
+	}
+
+	/**
+	 * This method is used to set the particular value in the text box by using the Java Script.
+	 * @param locatorName Name of the locator for which you want to set the value.
+	 * @param value A string value which needs to be passed to the locator.
+	 */
+	public void jsSetTextBoxValue(WebElement element, String value) {
+		getJSExecutor().executeScript("arguments[0].value = '"+value+"';", element);
+
+	}
+
+	public void uploadFile(String pathOfFile) throws AWTException {
+		Robot robot= new Robot();
+		robot.setAutoDelay(2000);
+
+		StringSelection ss = new StringSelection(pathOfFile);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		robot.setAutoDelay(2000);
+
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		
+	}
 
 }
