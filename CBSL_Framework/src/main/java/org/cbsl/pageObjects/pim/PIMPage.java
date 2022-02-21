@@ -30,10 +30,10 @@ public class PIMPage {
 	}
 	
 	public void setFirstName(String firstName) {
-		utill.input(txtFirstName, firstName);
+		utill.setTextBoxValue(txtFirstName, firstName);
 	}
 	public void setLastName(String lastName) {
-		utill.input(txtLastName, lastName);
+		utill.setTextBoxValue(txtLastName, lastName);
 	}
 	public void clickSavebtn() {
 		utill.click(btnSave);

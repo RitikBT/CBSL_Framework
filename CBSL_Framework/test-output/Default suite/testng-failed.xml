@@ -7,8 +7,8 @@
         <methods>
           <include name="getResult"/>
           <include name="launch"/>
-          <include name="loginTest"/>
           <include name="endReport"/>
+          <include name="testcase001_loginTest"/>
           <include name="setReport"/>
         </methods>
       </class> <!-- org.cbsl.testcases.TC_AddEmployee -->

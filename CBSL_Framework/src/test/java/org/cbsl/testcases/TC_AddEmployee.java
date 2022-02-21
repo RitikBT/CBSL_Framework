@@ -1,28 +1,27 @@
 package org.cbsl.testcases;
 
-import org.cbsl.pageObjects.login.LoginPage;
+import java.awt.AWTException;
+
+import org.apache.log4j.Logger;
 import org.cbsl.pageObjects.pim.PIMPage;
 import org.cbsl.pageObjects.pim.PersonalDetailsPage;
 import org.cbsl.utility.BaseClass;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC_AddEmployee extends BaseClass {
 	
+	private static final Logger logger = Logger.getLogger(TC_AddEmployee.class);
 	
-	
-	@Test
-	public void loginTest() {
-		loginPg =new LoginPage(utill);
-		loginPg.setPwd(utill.getProperty("userPwd"));
-		loginPg.setUserID(utill.getProperty("userID"));
-		loginPg.clickLogin();
+	@Test(priority = 1)
+	public void testcase001_loginTest() throws AWTException {
+		
 		pimPage= new PIMPage(utill);
 		pimPage.navigateToPIM();
 		pimPage.clickAddbtn();
 		pimPage.setFirstName("Vikas");
 		pimPage.setLastName("Singh");
 		pimPage.clickSavebtn();
+		
 		personalDetails =new  PersonalDetailsPage(utill);
 		personalDetails.clickEditbtn();
 		personalDetails.enterLicenNumber("DL03 20180045666");
@@ -33,11 +32,15 @@ public class TC_AddEmployee extends BaseClass {
 		personalDetails.selectGender('M');
 		personalDetails.selChkBxSmoker('N');
 		personalDetails.clickOnSavebtn();
+		personalDetails.bloodType("AB-");
+		personalDetails.fileUpload();
+		
+		logger.info("Personal Details has been filled");
 		
 	}
 	
-	@Test
-	public void mYTest() {
+	
+	public void testcase002_Test() {
 		System.out.println("Hello Ritik ....Parallel Testing Demo");
 	}
 

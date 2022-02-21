@@ -1,5 +1,11 @@
 package org.cbsl.pageObjects.pim;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,6 +26,10 @@ public class PersonalDetailsPage {
 	@FindBy(xpath = "//input[@id='personal_DOB']") private WebElement txtDOB;
 	@FindBy(xpath = "//input[@id='personal_txtEmpNickName']") private WebElement txtNickName;
 	@FindBy(xpath = "//input[@id='personal_chkSmokeFlag']") private WebElement chkbxSmoker;
+	@FindBy(id="btnEditCustom") private WebElement btEdit_CustomField;
+	@FindBy(name="custom1") private WebElement bloodTypeDropDown;
+	@FindBy(id="btnAddAttachment") private WebElement btnAddAttachment;
+	@FindBy(name="ufile") private WebElement uploadFileBtn;
 
 
 	WebUtill utill;
@@ -35,46 +45,45 @@ public class PersonalDetailsPage {
 
 	public void enterLicenNumber(String licenNumber) {
 		utill.clear(txtDLNumber);
-		utill.input(txtDLNumber, licenNumber);
+		utill.setTextBoxValue(txtDLNumber, licenNumber);
 	}
 
 	public void enterLicenExpDate(String yyyy_mm_dd_ExpDate) {
 		utill.clear(txtDLExpDate);
-		utill.input(txtDLExpDate, yyyy_mm_dd_ExpDate);
+		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate);
 	}
 
 	public void enterSSN_Number(String ssnString ) {
 		utill.clear(txtSSNNumber);
-		utill.input(txtSSNNumber, ssnString);
+		utill.setTextBoxValue(txtSSNNumber, ssnString);
 	}
 
 	public void enterSIN_Number(String sin_Num) {
 		utill.clear(txtSINNum);
-		utill.input(txtSINNum, sin_Num);
+		utill.setTextBoxValue(txtSINNum, sin_Num);
 	}
 
 	public void selectGender(char select_M_Or_F) {
 		switch (select_M_Or_F) {
 		case 'M':
 			utill.click(selMale);
-
 			break;
 		case 'F':
 			utill.click(selFemale);
-
 		default:
 			System.out.println("Please Enter M or F");
 		}
 	}
 
+
 	public void enterDOB(String yyyy_mm_dd_selDOB) {
 		utill.clear(txtDOB);
-		utill.input(txtDOB, yyyy_mm_dd_selDOB);
+		utill.setTextBoxValue(txtDOB, yyyy_mm_dd_selDOB);
 	}
 
 	public void enterNickName(String nickName) {
 		utill.clear(txtNickName);
-		utill.input(txtNickName, nickName);;
+		utill.setTextBoxValue(txtNickName, nickName);;
 	}
 
 	public void selChkBxSmoker(char sel_Y_or_N) {
@@ -86,13 +95,33 @@ public class PersonalDetailsPage {
 			System.out.println("Smoker Check Box is unselected...");
 			break;
 		default:
-			System.out.println("You have entered wrong char. Please select Y or N. And By Default smker is unchecked........... ");
+			System.out.println("You have entered wrong char. Please select Y or N. otherwise smoker is unchecked by default........... ");
 		}
 	}
 
 	public void clickOnSavebtn() {
 		utill.click(btnEdit_Save);
 	}
-	
+
+
+
+	public void bloodType(String bloodType) {
+		utill.click(btEdit_CustomField);
+		utill.selectDropDownValue(bloodTypeDropDown, "value", bloodType);
+
+	}
+
+	public void fileUpload() throws AWTException {
+		utill.click(btnAddAttachment);
+		utill.click(uploadFileBtn);
+
+		StringSelection ss = new StringSelection("C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot (2).png");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+		Robot robot= new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+
+	}
+
 
 }

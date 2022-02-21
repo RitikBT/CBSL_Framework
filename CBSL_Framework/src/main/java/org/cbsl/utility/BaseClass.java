@@ -1,8 +1,10 @@
 package org.cbsl.utility;
 
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
+import org.apache.log4j.Logger;
 import org.cbsl.pageObjects.login.LoginPage;
 import org.cbsl.pageObjects.pim.PIMPage;
 import org.cbsl.pageObjects.pim.PersonalDetailsPage;
@@ -21,20 +23,24 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
 public class BaseClass {
-	
+
+
 	protected LoginPage loginPg;
 	protected PIMPage pimPage;
 	protected PersonalDetailsPage personalDetails;
-	private ExtentHtmlReporter htmlReporter;
-	private ExtentReports extent;
-	private ExtentTest test;
-	
-	
+
+	public static ExtentHtmlReporter htmlReporter;
+	public static  ExtentReports extent;
+	public static ExtentTest test;
+
+
 	protected WebUtill utill=new WebUtill();
 	protected Config conPro= new Config();
-	
-	
+
+	private static final Logger logger = Logger.getLogger(BaseClass.class);
+
 
 	@BeforeTest
 	public void setReport() {
@@ -46,7 +52,7 @@ public class BaseClass {
 		extent.setSystemInfo("Environment", "Local");
 		extent.setSystemInfo("OS", "Windows10");
 		extent.setSystemInfo("User Name", "Ritik Yadav");
-		
+
 		htmlReporter.config().setDocumentTitle("Automation Report"); 
 		// Name of the report
 		htmlReporter.config().setReportName("Functional Report "); 
@@ -57,17 +63,22 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun =true )
 	public void launch(Method methodName,String browser) {
+
 		utill.launchBrowser(browser);
-		utill.setUrl(utill.getProperty("url"));//https://opensource-demo.orangehrmlive.com/
+		logger.info("Browser launched...");
+		utill.openUrl(utill.getProperty("url"));//https://opensource-demo.orangehrmlive.com/
 		test=extent.createTest(methodName.getName());
+		loginPg =new LoginPage(utill);
+		loginPg.setPwd(utill.getProperty("userPwd"));
+		loginPg.setUserID(utill.getProperty("userID"));
+		loginPg.clickLogin();
 	}
 
 
 	@AfterMethod
-	public void getResult(ITestResult result) throws Exception
-	{
-		if(result.getStatus() == ITestResult.FAILURE)
-		{
+	public void getResult(ITestResult result){
+
+		if(result.getStatus() == ITestResult.FAILURE){
 			//MarkupHelper is used to display the output in different colors
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
@@ -76,10 +87,18 @@ public class BaseClass {
 			//We do pass the path captured by this method in to the extent reports using "logger.addScreenCapture" method. 
 
 			//	String Scrnshot=TakeScreenshot.captuerScreenshot(driver,"TestCaseFailed");
-			String screenshotPath = utill.takeSnapshot(result.getName());
+			//	String screenshotPath = utill.takeSnapshot(result.getName());
 			//To add it in the extent report 
 
-			test.fail("Test Case Failed Snapshot is below " + test.addScreenCaptureFromPath(screenshotPath));
+			try {
+				test.fail("<b><font color=red>"+"Screenshot of failure "+ "</font></b>");
+				String screenshotPath = utill.takeSnapshot(result.getName());	
+				logger.info("Screenshot taken for failed "+result.getName()+" testcases");
+			}catch (IOException e) {
+				test.fail("Test Failed, cannot attach screenshot");
+			}
+
+
 		}
 		else if(result.getStatus() == ITestResult.SKIP){
 			//logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
@@ -87,12 +106,12 @@ public class BaseClass {
 		} 
 		else if(result.getStatus() == ITestResult.SUCCESS)
 		{
-			
+
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
 		}
-		utill.closeBrowser();
+		//	utill.closeBrowser();
 	}
-	
+
 	@AfterTest
 	public void endReport() {
 		extent.flush();

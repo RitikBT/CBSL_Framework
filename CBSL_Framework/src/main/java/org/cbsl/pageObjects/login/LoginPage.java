@@ -1,5 +1,7 @@
 package org.cbsl.pageObjects.login;
 
+import org.apache.log4j.Logger;
+import org.cbsl.utility.BaseClass;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,26 +13,29 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@id='txtPassword']") private WebElement txtPwd;
 	@FindBy(xpath="//input[@id='btnLogin']") private WebElement btnLogin;
 
-	WebUtill utill;
-	
+	WebUtill loginutill;
+	private static final Logger logger = Logger.getLogger(LoginPage.class);
+
 	public LoginPage(WebUtill utill) {
-		this.utill=utill;
+		loginutill=utill;
 		PageFactory.initElements(utill.getDriver(), this);
 	}
 
 	public void setUserID(String userID) {
-		utill.clear(txtUserID);
-		utill.input(txtUserID, userID);
+		loginutill.clear(txtUserID);
+		loginutill.setTextBoxValue(txtUserID, userID);
 	}
 
 	public void setPwd(String password) {
-		utill.clear(txtPwd);
-		utill.input(txtPwd, password);
+		loginutill.clear(txtPwd);
+		loginutill.setTextBoxValue(txtPwd, password);
 	}
 
 
 	public void clickLogin() {
-		utill.click(btnLogin);
+		loginutill.click(btnLogin);
+		logger.info("Click on Login Button......");
+		
 	}
 
 }
