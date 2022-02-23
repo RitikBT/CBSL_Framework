@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 
 import org.apache.log4j.Logger;
 import org.cbsl.pageObjects.login.LoginPage;
+import org.cbsl.pageObjects.pim.ContactDetailsPage;
 import org.cbsl.pageObjects.pim.PIMPage;
 import org.cbsl.pageObjects.pim.PersonalDetailsPage;
 import org.testng.ITestResult;
@@ -30,6 +31,7 @@ public class BaseClass {
 	protected LoginPage loginPg;
 	protected PIMPage pimPage;
 	protected PersonalDetailsPage personalDetails;
+	protected ContactDetailsPage contactDetails;
 
 	public static ExtentHtmlReporter htmlReporter;
 	public static  ExtentReports extent;

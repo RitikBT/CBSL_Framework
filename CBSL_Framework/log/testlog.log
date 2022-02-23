@@ -186,3 +186,755 @@ Session ID: 9784cb522150da251d00ac6ebcb3c648
 2022-02-21 17:18:25,400 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> id: btnEditCustom]
 2022-02-21 17:18:39,512 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e7f65eec7c8b11b7db73fa46fe73d9f7)] -> id: btnAddAttachment]
 2022-02-21 17:19:26,999 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 13:29:58,867 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 13:30:06,147 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 13:30:06,373 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 13:30:06,525 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 13:30:42,712 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 13:30:42,713 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 13:30:47,919 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 13:31:19,076 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 13:31:19,190 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 13:31:19,304 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 13:31:22,097 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:31:22,203 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:31:22,367 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 13:31:22,576 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 13:31:22,741 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 13:31:22,898 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 13:31:23,087 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 13:31:23,173 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 13:31:23,173 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 13:31:25,222 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:31:25,297 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> id: btnEditCustom]
+2022-02-22 13:31:25,516 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> id: btnAddAttachment]
+2022-02-22 13:31:44,927 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 13:31:46,403 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 13:31:46,491 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (53d6ae9bc28af3008a44ea779b05f8d4)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:31:46,641 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:31:46,777 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:31:46,893 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 13:31:47,015 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 13:31:47,137 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 13:32:17,434 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-22 13:36:09,063 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 13:36:16,160 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 13:36:16,373 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 13:36:16,522 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 13:36:52,418 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 13:36:52,418 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 13:36:54,988 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 13:37:25,962 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 13:37:26,126 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 13:37:26,247 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 13:37:28,867 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:37:28,964 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:37:29,129 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 13:37:29,341 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 13:37:29,507 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 13:37:29,688 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 13:37:29,862 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 13:37:29,944 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 13:37:29,945 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 13:37:31,923 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:37:31,998 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> id: btnEditCustom]
+2022-02-22 13:37:32,248 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> id: btnAddAttachment]
+2022-02-22 13:37:51,770 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 13:37:53,683 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 13:37:53,758 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:37:53,884 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:37:54,011 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:37:54,117 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 13:37:54,229 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 13:37:54,338 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 13:37:54,603 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 13:37:54,724 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 13:37:54,868 - org.cbsl.utility.WebUtill -INFO - vikas123@gmail.com is entered in text box.
+2022-02-22 13:37:59,710 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:38:01,159 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (75ac80433b7d2641ef79c0e401e0d6af)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 13:38:13,208 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 13:44:23,656 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 13:44:33,750 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 13:44:33,930 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 13:44:34,070 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 13:45:10,662 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 13:45:10,663 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 13:45:14,556 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 13:45:46,176 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 13:45:46,293 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 13:45:46,397 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 13:45:49,010 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:45:49,087 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:45:49,255 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 13:45:49,464 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 13:45:49,628 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 13:45:49,784 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 13:45:49,952 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 13:45:50,039 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 13:45:50,039 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 13:45:52,586 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:45:52,660 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> id: btnEditCustom]
+2022-02-22 13:45:52,893 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> id: btnAddAttachment]
+2022-02-22 13:46:14,198 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 13:46:15,675 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 13:46:15,752 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:46:15,882 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:46:15,993 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:46:16,114 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 13:46:16,228 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 13:46:16,354 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 13:46:16,614 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 13:46:16,736 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 13:46:16,856 - org.cbsl.utility.WebUtill -INFO - vikas123@gmail.com is entered in text box.
+2022-02-22 13:46:16,933 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:46:17,011 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 13:46:29,128 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3ca941d67cf116611114b13802c3ba71)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 13:46:29,128 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 13:50:33,199 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 13:50:43,756 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 13:50:43,972 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 13:50:44,137 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 13:51:19,867 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 13:51:19,867 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 13:51:22,733 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (20fc21197ab136c4c51b5ed4e84e1104)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 13:51:53,787 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 13:51:53,957 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 13:51:54,062 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 13:51:55,136 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (20fc21197ab136c4c51b5ed4e84e1104)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:51:55,216 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (20fc21197ab136c4c51b5ed4e84e1104)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:52:32,745 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 13:52:42,471 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 13:52:42,664 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 13:52:42,828 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 13:53:19,385 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 13:53:19,386 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 13:53:21,998 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 13:53:53,170 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 13:53:53,319 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 13:53:53,433 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 13:53:56,066 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:53:56,144 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:53:56,288 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 13:53:56,475 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 13:53:56,629 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 13:53:56,770 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 13:53:56,957 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 13:53:57,034 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 13:53:57,035 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 13:53:58,928 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:53:59,001 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> id: btnEditCustom]
+2022-02-22 13:53:59,221 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> id: btnAddAttachment]
+2022-02-22 13:54:20,696 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 13:54:22,175 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 13:54:22,248 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:54:22,395 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:54:22,514 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 13:54:22,628 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 13:54:22,731 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 13:54:22,859 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 13:54:23,135 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 13:54:23,260 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 13:54:23,375 - org.cbsl.utility.WebUtill -INFO - vikasOx5@gmail.com is entered in text box.
+2022-02-22 13:54:25,324 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnSave']]
+2022-02-22 13:54:27,431 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 13:54:39,562 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (58466b9e7db617685d1ad4d722fa9686)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 13:54:39,562 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 14:02:32,237 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 14:02:41,585 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 14:02:41,778 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 14:02:41,929 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 14:03:17,987 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 14:03:17,988 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 14:03:20,626 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 14:03:51,631 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 14:03:51,750 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 14:03:51,863 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 14:03:54,362 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:03:54,439 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:03:54,599 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 14:03:54,786 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 14:03:54,949 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 14:03:55,096 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 14:03:55,276 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 14:03:55,361 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 14:03:55,361 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 14:03:57,323 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:03:57,398 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> id: btnEditCustom]
+2022-02-22 14:03:57,600 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> id: btnAddAttachment]
+2022-02-22 14:04:18,101 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 14:04:19,443 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 14:04:19,518 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:04:19,639 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:04:19,760 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:04:19,875 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 14:04:19,986 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 14:04:20,096 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 14:04:20,334 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 14:04:20,438 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 14:04:20,550 - org.cbsl.utility.WebUtill -INFO - vikash5s@gmail.com is entered in text box.
+2022-02-22 14:04:22,409 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:05:18,180 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9fae7152e4724eb6c5ea9fe7c2cc0962)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 14:09:17,497 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 14:09:26,685 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 14:09:26,873 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 14:09:27,014 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 14:10:02,782 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 14:10:02,782 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 14:10:05,372 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 14:10:36,277 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 14:10:36,440 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 14:10:36,571 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 14:10:39,014 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:10:39,123 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:10:39,293 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 14:10:39,484 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 14:10:39,669 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 14:10:39,839 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 14:10:40,036 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 14:10:40,120 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 14:10:40,121 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 14:10:41,945 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:10:42,040 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> id: btnEditCustom]
+2022-02-22 14:10:42,270 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> id: btnAddAttachment]
+2022-02-22 14:11:01,851 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 14:11:03,102 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 14:11:03,182 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:11:03,314 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:11:03,448 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:11:03,558 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 14:11:03,664 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 14:11:03,776 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 14:11:04,018 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 14:11:04,134 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 14:11:04,252 - org.cbsl.utility.WebUtill -INFO - vikas3mU@gmail.com is entered in text box.
+2022-02-22 14:11:05,959 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:11:06,032 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 14:11:20,416 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34266994c1f601a1bf42b203f79065b)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 14:11:20,417 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 14:12:41,156 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 14:12:50,532 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 14:12:50,713 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 14:12:50,847 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 14:13:26,844 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 14:13:26,845 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 14:13:29,350 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 14:14:00,275 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 14:14:00,403 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 14:14:00,516 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 14:14:02,942 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:14:03,052 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:14:03,222 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 14:14:03,410 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 14:14:03,582 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 14:14:03,747 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 14:14:03,936 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 14:14:04,017 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 14:14:04,017 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 14:14:05,896 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:14:05,969 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> id: btnEditCustom]
+2022-02-22 14:14:06,204 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> id: btnAddAttachment]
+2022-02-22 14:14:26,358 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 14:14:27,771 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 14:14:27,844 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:14:27,977 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:14:28,117 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:14:28,243 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 14:14:28,389 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 14:14:28,509 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 14:14:28,796 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 14:14:28,937 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 14:14:29,053 - org.cbsl.utility.WebUtill -INFO - vikasoM9@gmail.com is entered in text box.
+2022-02-22 14:14:30,761 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:14:30,840 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 14:14:45,218 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (207004b6b8559ca88aaff1a75952c154)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 14:14:45,218 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 14:21:00,171 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 14:21:06,129 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 14:21:06,348 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 14:21:06,516 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 14:21:42,714 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 14:21:42,715 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 14:21:45,364 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 14:22:16,373 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 14:22:16,536 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 14:22:16,653 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 14:22:19,615 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:22:19,720 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:22:19,886 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 14:22:20,064 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 14:22:20,228 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 14:22:20,397 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 14:22:20,581 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 14:22:20,667 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 14:22:20,667 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 14:22:22,727 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:22:22,804 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> id: btnEditCustom]
+2022-02-22 14:22:23,033 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> id: btnAddAttachment]
+2022-02-22 14:23:13,114 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 14:23:14,651 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 14:23:14,747 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:23:14,879 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:23:15,010 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 14:23:15,118 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 14:23:15,234 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 14:23:15,363 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 14:23:15,627 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 14:23:15,753 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 14:23:15,895 - org.cbsl.utility.WebUtill -INFO - vikaswyO@gmail.com is entered in text box.
+2022-02-22 14:23:17,959 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnSave']]
+2022-02-22 14:23:44,169 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (bc6bec43c69e94935762e496d7d1e237)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 15:04:55,298 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:05:03,023 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:05:03,397 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:05:03,682 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:05:40,500 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:05:40,501 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:05:43,326 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 15:06:14,385 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 15:06:14,616 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 15:06:14,835 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 15:06:17,478 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:06:17,630 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:06:17,960 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 15:06:18,346 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 15:06:18,698 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 15:06:19,013 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 15:06:19,369 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 15:06:19,552 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 15:06:19,554 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 15:06:21,627 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:06:21,792 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> id: btnEditCustom]
+2022-02-22 15:06:22,198 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> id: btnAddAttachment]
+2022-02-22 15:06:47,834 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 15:06:49,303 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 15:06:49,454 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:06:49,739 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:06:50,005 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:06:50,249 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 15:06:50,471 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 15:06:50,716 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 15:06:51,130 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 15:06:51,378 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 15:06:51,601 - org.cbsl.utility.WebUtill -INFO - vikasAnN@gmail.com is entered in text box.
+2022-02-22 15:06:53,825 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:06:53,997 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 15:07:08,445 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (7ec6a1c8afab8a8afcdef04544dec674)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 15:07:08,446 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 15:08:58,902 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:09:06,714 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:09:07,319 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:09:07,694 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:09:43,825 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:09:43,826 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:09:47,191 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 15:10:18,448 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 15:10:18,735 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 15:10:19,049 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 15:10:21,712 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:10:21,946 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:10:22,291 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 15:10:22,708 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 15:10:23,075 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 15:10:23,402 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 15:10:23,780 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 15:10:23,985 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 15:10:23,986 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 15:10:26,239 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:10:26,410 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> id: btnEditCustom]
+2022-02-22 15:10:47,499 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (baeb1a7b6c3e511784d51fa55641f2fb)] -> id: btnAddAttachment]
+2022-02-22 15:13:45,777 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:13:55,730 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:13:56,296 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:13:56,688 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:14:33,149 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:14:33,150 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:14:35,817 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 15:15:07,171 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 15:15:07,451 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 15:15:07,693 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 15:15:10,139 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:15:10,351 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:15:10,716 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 15:15:11,235 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 15:15:11,607 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 15:15:11,955 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 15:15:12,378 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 15:15:12,571 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 15:15:12,572 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 15:15:14,783 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:15:14,973 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> id: btnEditCustom]
+2022-02-22 15:15:44,652 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> id: btnAddAttachment]
+2022-02-22 15:16:06,312 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 15:16:22,481 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 15:16:22,650 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:16:23,088 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:16:23,369 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:16:23,603 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 15:16:23,828 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 15:16:24,040 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 15:16:24,467 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 15:16:24,719 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 15:16:24,944 - org.cbsl.utility.WebUtill -INFO - vikas8v4@gmail.com is entered in text box.
+2022-02-22 15:16:27,058 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:16:36,838 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 15:17:25,235 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (efc6c2394b7dbcefc05eb68ab89bdea8)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 15:17:25,236 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 15:17:59,731 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:18:14,074 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:18:14,514 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:18:14,812 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:18:52,335 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:18:52,335 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:19:29,954 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:19:40,906 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:19:41,313 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:19:41,612 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:20:19,024 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:20:19,025 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:20:22,300 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 15:20:53,338 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 15:20:53,592 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 15:20:53,820 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 15:20:56,085 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:20:56,259 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:20:56,588 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 15:20:56,990 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 15:20:57,323 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 15:20:57,644 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 15:20:58,036 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 15:20:58,222 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 15:20:58,223 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 15:21:00,457 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:21:00,616 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> id: btnEditCustom]
+2022-02-22 15:21:01,050 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> id: btnAddAttachment]
+2022-02-22 15:21:20,711 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 15:21:22,956 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 15:21:23,107 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:21:23,399 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:21:23,677 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:21:23,912 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 15:21:24,136 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 15:21:24,383 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 15:21:24,856 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 15:21:25,103 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 15:21:25,332 - org.cbsl.utility.WebUtill -INFO - vikas8y2@gmail.com is entered in text box.
+2022-02-22 15:21:27,633 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:21:27,789 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 15:21:42,281 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (e76316b59b95be61d22291a04852546d)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 15:21:42,281 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 15:29:39,632 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:29:53,860 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:29:54,271 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:29:54,564 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:30:09,310 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:30:09,311 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:30:39,598 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 15:30:50,254 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 15:30:50,620 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 15:30:50,910 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 15:31:28,392 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 15:31:28,393 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 15:31:32,161 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 15:32:03,555 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 15:32:03,811 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 15:32:04,055 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 15:32:07,491 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:32:07,692 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:32:08,003 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 15:32:08,438 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 15:32:08,759 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 15:32:09,081 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 15:32:09,547 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 15:32:09,720 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 15:32:09,721 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 15:32:12,510 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:32:12,684 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> id: btnEditCustom]
+2022-02-22 15:32:13,112 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> id: btnAddAttachment]
+2022-02-22 15:33:41,247 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 15:34:03,245 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 15:34:03,447 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:34:03,810 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:34:04,063 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 15:34:04,257 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 15:34:04,459 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 15:34:04,674 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 15:34:05,138 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 15:34:05,378 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 15:34:05,622 - org.cbsl.utility.WebUtill -INFO - vikas6z5@gmail.com is entered in text box.
+2022-02-22 15:34:08,513 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnSave']]
+2022-02-22 15:34:08,689 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 15:35:36,943 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (c03b87d5d47bd18205209e155b409aab)] -> xpath: //textarea[@id='txtAttDesc']]
+2022-02-22 15:35:36,945 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 16:26:06,847 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 16:26:18,213 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 16:26:18,585 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 16:26:18,876 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 16:26:57,595 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 16:26:57,596 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 16:27:01,461 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9e51888654a81d7db25f81890d0af73a)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 16:27:33,167 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 16:27:33,373 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 16:27:33,589 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 16:27:34,993 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9e51888654a81d7db25f81890d0af73a)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:27:35,178 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (9e51888654a81d7db25f81890d0af73a)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:28:05,539 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-22 16:28:30,786 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 16:28:39,365 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 16:28:39,777 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 16:28:40,089 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 16:29:17,754 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 16:29:17,755 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 16:29:21,337 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 16:29:52,653 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 16:29:52,870 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 16:29:53,090 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 16:29:55,627 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:29:55,778 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:29:56,100 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 16:29:56,490 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 16:29:56,819 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 16:29:57,125 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 16:29:57,483 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 16:29:57,637 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 16:29:57,638 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 16:29:59,883 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:30:00,038 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> id: btnEditCustom]
+2022-02-22 16:30:00,485 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> id: btnAddAttachment]
+2022-02-22 16:30:22,882 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 16:30:24,986 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 16:30:25,139 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:30:25,424 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 16:30:25,697 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 16:30:25,920 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 16:30:26,143 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 16:30:26,381 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 16:30:26,815 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 16:30:27,058 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 16:30:27,289 - org.cbsl.utility.WebUtill -INFO - vikasszl@gmail.com is entered in text box.
+2022-02-22 16:30:30,049 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:30:30,224 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 16:30:44,748 - org.cbsl.utility.WebUtill -INFO - Doc is uploaded......!!!!! is entered in text box.
+2022-02-22 16:30:44,898 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (b71b897848fbf7a2655cedd57dd3afb2)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 16:30:44,898 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 16:34:30,127 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 16:34:38,421 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 16:34:38,806 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 16:34:39,085 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 16:35:15,554 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 16:35:15,554 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 16:35:18,994 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 16:35:50,139 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 16:35:50,389 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 16:35:50,621 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 16:35:53,532 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:35:53,687 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:35:54,015 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 16:35:54,404 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 16:35:54,744 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 16:35:55,072 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 16:35:55,461 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 16:35:55,640 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 16:35:55,643 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 16:35:58,134 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:35:58,307 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> id: btnEditCustom]
+2022-02-22 16:35:58,709 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> id: btnAddAttachment]
+2022-02-22 16:36:20,049 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 16:36:21,907 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 16:36:22,044 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:36:22,351 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 16:36:22,594 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 16:36:22,808 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 16:36:23,019 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 16:36:23,221 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 16:36:23,712 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 16:36:23,953 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 16:36:24,193 - org.cbsl.utility.WebUtill -INFO - vikasbni@gmail.com is entered in text box.
+2022-02-22 16:36:26,380 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:36:26,536 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 16:36:41,117 - org.cbsl.utility.WebUtill -INFO - Doc is uploaded......!!!!! is entered in text box.
+2022-02-22 16:36:41,276 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (ab3a4fc5031a5ca775764b1d499ca5f2)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 16:36:41,277 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-22 16:52:17,720 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 16:52:26,920 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 16:52:27,307 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 16:52:27,612 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 16:53:05,271 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 16:53:05,272 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 16:53:08,776 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (447857d8ee31ce1e965ccbf2344cfd66)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 16:53:40,513 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 16:53:40,757 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 16:53:40,986 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 16:53:42,427 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (447857d8ee31ce1e965ccbf2344cfd66)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:53:42,606 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (447857d8ee31ce1e965ccbf2344cfd66)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:54:12,013 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 16:54:21,620 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 16:54:22,039 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 16:54:22,364 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 16:55:02,134 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 16:55:02,135 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 16:55:05,200 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (168960c81d0edff8f60635ee5fcbc3e3)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 16:55:36,593 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 16:55:36,823 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 16:55:37,038 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 16:55:38,721 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (168960c81d0edff8f60635ee5fcbc3e3)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:55:38,906 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (168960c81d0edff8f60635ee5fcbc3e3)] -> xpath: //input[@id='btnSave']]
+2022-02-22 16:56:09,329 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-22 17:11:11,274 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-22 17:11:23,498 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-22 17:11:23,895 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-22 17:11:24,188 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-22 17:12:04,064 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-22 17:12:04,066 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-22 17:12:08,272 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-22 17:12:39,861 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-22 17:12:40,118 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-22 17:12:40,347 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-22 17:12:40,590 - org.cbsl.utility.WebUtill -INFO - 23730 is entered in text box.
+2022-02-22 17:12:44,056 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSave']]
+2022-02-22 17:12:44,212 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSave']]
+2022-02-22 17:12:44,559 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-22 17:12:44,942 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-22 17:12:45,266 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-22 17:12:45,590 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-22 17:12:45,996 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-22 17:12:46,185 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-22 17:12:46,186 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-22 17:12:48,288 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSave']]
+2022-02-22 17:12:48,438 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> id: btnEditCustom]
+2022-02-22 17:12:48,864 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> id: btnAddAttachment]
+2022-02-22 17:13:09,641 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 17:13:11,065 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //a[text()='Contact Details']]
+2022-02-22 17:13:11,213 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSave']]
+2022-02-22 17:13:11,500 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 17:13:11,780 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-22 17:13:12,006 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-22 17:13:12,218 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-22 17:13:12,459 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-22 17:13:12,947 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-22 17:13:13,219 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-22 17:13:13,469 - org.cbsl.utility.WebUtill -INFO - vikasDF@gmail.com is entered in text box.
+2022-02-22 17:13:16,117 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSave']]
+2022-02-22 17:13:16,269 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnAddAttachment']]
+2022-02-22 17:13:30,864 - org.cbsl.utility.WebUtill -INFO - Doc is uploaded......!!!!! is entered in text box.
+2022-02-22 17:13:31,033 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (f34efdef6c7e19868db447855ce29fc7)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-22 17:13:31,033 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-23 11:58:35,566 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-23 11:58:42,485 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-23 11:59:02,933 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-23 11:59:03,211 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-23 11:59:03,423 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-23 11:59:09,669 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-23 11:59:09,828 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-23 11:59:09,972 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-23 11:59:39,033 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-23 11:59:39,034 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-23 11:59:41,883 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-23 11:59:45,752 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-23 11:59:45,752 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-23 11:59:48,431 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (545f180b170f49c930009c8ba5c6015a)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-23 12:00:12,781 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-23 12:00:12,944 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-23 12:00:13,150 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-23 12:00:13,327 - org.cbsl.utility.WebUtill -INFO - 49660 is entered in text box.
+2022-02-23 12:00:19,548 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-23 12:00:19,700 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-23 12:00:19,809 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-23 12:00:19,934 - org.cbsl.utility.WebUtill -INFO - 20201 is entered in text box.
+2022-02-23 12:00:52,609 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:00:52,714 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:00:52,928 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-23 12:00:53,193 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-23 12:00:53,407 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-23 12:00:53,655 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-23 12:00:53,873 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-23 12:00:54,002 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-23 12:00:54,004 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-23 12:00:56,270 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:00:56,364 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> id: btnEditCustom]
+2022-02-23 12:00:56,609 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> id: btnAddAttachment]
+2022-02-23 12:01:00,184 - org.cbsl.utility.BaseClass -INFO - Screenshot taken for failed testcase001_loginTest testcases
+2022-02-23 12:01:12,145 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-23 12:01:13,900 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //a[text()='Contact Details']]
+2022-02-23 12:01:13,980 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:01:14,105 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-23 12:01:14,228 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-23 12:01:14,344 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-23 12:01:14,462 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-23 12:01:14,575 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-23 12:01:14,828 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-23 12:01:14,947 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-23 12:01:15,061 - org.cbsl.utility.WebUtill -INFO - vikas7L@gmail.com is entered in text box.
+2022-02-23 12:01:16,971 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (3eb7863667ec67230ce47cfdde7be0e8)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:01:16,972 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-23 12:03:56,040 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-23 12:03:57,276 - org.cbsl.utility.BaseClass -INFO - Browser launched...
+2022-02-23 12:04:23,193 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-23 12:04:23,404 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-23 12:04:23,557 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-23 12:04:25,134 - org.cbsl.utility.WebUtill -INFO - https://opensource-demo.orangehrmlive.com/ opened successfully
+2022-02-23 12:04:25,304 - org.cbsl.utility.WebUtill -INFO - admin123 is entered in text box.
+2022-02-23 12:04:25,429 - org.cbsl.utility.WebUtill -INFO - Admin is entered in text box.
+2022-02-23 12:04:59,606 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-23 12:04:59,606 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-23 12:05:01,162 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnLogin']'
+2022-02-23 12:05:01,163 - org.cbsl.pageObjects.login.LoginPage -INFO - Click on Login Button......
+2022-02-23 12:05:02,153 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-23 12:05:05,680 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //a[@id='menu_pim_viewPimModule']]
+2022-02-23 12:05:33,223 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-23 12:05:33,387 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-23 12:05:33,592 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-23 12:05:33,754 - org.cbsl.utility.WebUtill -INFO - 34332 is entered in text box.
+2022-02-23 12:05:36,337 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:36,442 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:36,704 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-23 12:05:36,993 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-23 12:05:37,209 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-23 12:05:37,462 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-23 12:05:37,773 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-23 12:05:37,914 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-23 12:05:37,915 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-23 12:05:38,642 - org.cbsl.utility.WebUtill -INFO - Click on Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='btnAdd']'
+2022-02-23 12:05:38,750 - org.cbsl.utility.WebUtill -INFO - Vikas is entered in text box.
+2022-02-23 12:05:38,855 - org.cbsl.utility.WebUtill -INFO - Singh is entered in text box.
+2022-02-23 12:05:38,954 - org.cbsl.utility.WebUtill -INFO - 11094 is entered in text box.
+2022-02-23 12:05:39,854 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:39,931 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> id: btnEditCustom]
+2022-02-23 12:05:40,160 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> id: btnAddAttachment]
+2022-02-23 12:05:46,532 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:46,610 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:46,767 - org.cbsl.utility.WebUtill -INFO - DL03 20180045666 is entered in text box.
+2022-02-23 12:05:46,934 - org.cbsl.utility.WebUtill -INFO - 2028-12-09 is entered in text box.
+2022-02-23 12:05:47,091 - org.cbsl.utility.WebUtill -INFO - 000000012398 is entered in text box.
+2022-02-23 12:05:47,229 - org.cbsl.utility.WebUtill -INFO - 09876580000 is entered in text box.
+2022-02-23 12:05:47,422 - org.cbsl.utility.WebUtill -INFO - 1995-03-26 is entered in text box.
+2022-02-23 12:05:47,498 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='personal_optGender_1']]
+2022-02-23 12:05:47,498 - org.cbsl.pageObjects.pim.PersonalDetailsPage -INFO - Smoker Check Box is unselected...
+2022-02-23 12:05:49,442 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:49,516 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> id: btnEditCustom]
+2022-02-23 12:05:49,732 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> id: btnAddAttachment]
+2022-02-23 12:05:55,607 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-23 12:05:57,070 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //a[text()='Contact Details']]
+2022-02-23 12:05:57,158 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:05:57,287 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-23 12:05:57,407 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-23 12:05:57,522 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-23 12:05:57,629 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-23 12:05:57,741 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-23 12:05:57,976 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-23 12:05:58,088 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-23 12:05:58,217 - org.cbsl.utility.WebUtill -INFO - vikas7H@gmail.com is entered in text box.
+2022-02-23 12:06:00,159 - org.cbsl.utility.WebUtill -INFO - Click on [[ChromeDriver: chrome on WINDOWS (db8183a782cef6354a8100294e89d8bf)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:06:00,159 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled
+2022-02-23 12:06:12,570 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='btnSaveAttachment']]
+2022-02-23 12:06:14,258 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //a[text()='Contact Details']]
+2022-02-23 12:06:14,337 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:06:14,457 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-23 12:06:14,585 - org.cbsl.utility.WebUtill -INFO - Kanpur, Phase-2, Silicon Road is entered in text box.
+2022-02-23 12:06:14,716 - org.cbsl.utility.WebUtill -INFO - Kanpur is entered in text box.
+2022-02-23 12:06:14,835 - org.cbsl.utility.WebUtill -INFO - UP is entered in text box.
+2022-02-23 12:06:14,943 - org.cbsl.utility.WebUtill -INFO - 110098 is entered in text box.
+2022-02-23 12:06:15,188 - org.cbsl.utility.WebUtill -INFO - 00566-776770 is entered in text box.
+2022-02-23 12:06:15,300 - org.cbsl.utility.WebUtill -INFO - 9876543210 is entered in text box.
+2022-02-23 12:06:15,434 - org.cbsl.utility.WebUtill -INFO - vikasJr@gmail.com is entered in text box.
+2022-02-23 12:06:17,551 - org.cbsl.utility.WebUtill -INFO - Click on [[EdgeDriver: msedge on WINDOWS (c093daaaf28c04387de567d0b028b9c0)] -> xpath: //input[@id='btnSave']]
+2022-02-23 12:06:17,551 - org.cbsl.testcases.TC_AddEmployee -INFO - Personal Details has been filled

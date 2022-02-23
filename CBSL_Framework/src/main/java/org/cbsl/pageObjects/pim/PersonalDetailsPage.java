@@ -36,6 +36,7 @@ public class PersonalDetailsPage {
 	@FindBy(xpath= "//input[@id='ufile']") private WebElement chooseFileBtn;
 	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn; 
 
+	
 	private final static Logger logger=Logger.getLogger(PersonalDetailsPage.class);
 
 
@@ -45,6 +46,8 @@ public class PersonalDetailsPage {
 		PageFactory.initElements(utill.getDriver(), this);
 
 	}
+	
+
 
 	public void clickEditbtn() {
 		utill.click(btnEdit_Save);	

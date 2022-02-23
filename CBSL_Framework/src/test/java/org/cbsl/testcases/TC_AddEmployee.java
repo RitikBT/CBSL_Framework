@@ -1,8 +1,7 @@
 package org.cbsl.testcases;
 
-import java.awt.AWTException;
-
 import org.apache.log4j.Logger;
+import org.cbsl.pageObjects.pim.ContactDetailsPage;
 import org.cbsl.pageObjects.pim.PIMPage;
 import org.cbsl.pageObjects.pim.PersonalDetailsPage;
 import org.cbsl.utility.BaseClass;
@@ -20,6 +19,7 @@ public class TC_AddEmployee extends BaseClass {
 		pimPage.clickAddbtn();
 		pimPage.setFirstName("Vikas");
 		pimPage.setLastName("Singh");
+		pimPage.setEmpID();
 		pimPage.clickSavebtn();
 		
 		personalDetails =new  PersonalDetailsPage(utill);
@@ -34,6 +34,14 @@ public class TC_AddEmployee extends BaseClass {
 		personalDetails.clickOnSavebtn();
 		personalDetails.bloodType("AB-");
 		personalDetails.fileUpload();
+		
+		contactDetails=new ContactDetailsPage(utill);
+		contactDetails.navigateToContactDetailPage();
+		contactDetails.contactDetailsFields();
+		//contactDetails.uploadFile();
+		
+		
+		
 		
 		logger.info("Personal Details has been filled");
 		

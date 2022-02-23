@@ -12,7 +12,7 @@ public class PIMPage {
 	@FindBy(xpath = "//input[@id='firstName']") private WebElement txtFirstName;
 	@FindBy(xpath = "//input[@id='lastName']") private WebElement txtLastName;
 	@FindBy(xpath = "//input[@id='btnSave']") private WebElement btnSave;
-	
+	@FindBy(xpath= "//input[@id='employeeId']") private WebElement employeeID;
 	
 	WebUtill utill;
 	
@@ -23,6 +23,9 @@ public class PIMPage {
 	 
 	public void navigateToPIM() {
 		utill.click(linkPIM);
+	}
+	public void setEmpID() {
+		utill.setTextBoxValue(employeeID, utill.randomNumeric(5));
 	}
 	
 	public void clickAddbtn() {

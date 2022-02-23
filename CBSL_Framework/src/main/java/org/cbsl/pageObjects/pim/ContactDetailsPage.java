@@ -1,5 +1,7 @@
 package org.cbsl.pageObjects.pim;
 
+import java.awt.AWTException;
+
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,16 +16,16 @@ public class ContactDetailsPage {
 	@FindBy(xpath = "//input[@id='contact_city']") private WebElement editBoxCity;
 	@FindBy(xpath = "//input[@id='contact_province']") private WebElement editBoxState;
 	@FindBy(xpath = "//input[@id='contact_emp_zipcode']") private WebElement editBoxZipCod;
-	@FindBy(xpath = "//input[@id='contact_country']") private WebElement selectCountry;
+	@FindBy(xpath = "//select[@id='contact_country']") private WebElement selectCountry;
 	@FindBy(xpath = "//input[@id='contact_emp_hm_telephone']") private WebElement editBoxTelephon;
 	@FindBy(xpath = "//input[@id='contact_emp_mobile']") private WebElement editBoxMobile;
 	@FindBy(xpath = "//input[@id='contact_emp_work_email']") private WebElement editBoxWorkEmail;
 	@FindBy(xpath = "//input[@id='btnSave']") private WebElement saveBtn;
-	
-	
-
-	
-	
+	@FindBy(xpath = "//input[@id='btnAddAttachment']") private WebElement addAttachementBtn;
+	@FindBy(xpath = "//textarea[@id='txtAttDesc']") private WebElement commentBxfield;
+	@FindBy(xpath = "//input[@id='ufile']") private WebElement chooseFileBtn;
+	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn;
+		
 	
 	WebUtill utill;
 	public ContactDetailsPage(WebUtill utill) {
@@ -46,11 +48,22 @@ public class ContactDetailsPage {
 		utill.selectDropDownValue(selectCountry, "value", "IN");
 		utill.setTextBoxValue(editBoxTelephon, "00566-776770");
 		utill.setTextBoxValue(editBoxMobile, "9876543210");
-		utill.setTextBoxValue(editBoxWorkEmail, "vikas123@gmail.com");
+		utill.setTextBoxValue(editBoxWorkEmail, "vikas"+utill.randomString(2)+"@gmail.com");
 		utill.click(saveBtn);
 		
 	}
 public void uploadFile() {
-	utill.click(contactDetailsBtn);
+	
+	
+	utill.click(addAttachementBtn);
+	try {
+		utill.click(chooseFileBtn);
+		utill.holdOn(2);
+		utill.uploadFile("‪C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot.png");
+	} catch (AWTException e) {
+		e.printStackTrace();
+	}
+	utill.setTextBoxValue(commentBxfield, "Doc is uploaded......!!!!!");
+	utill.click(uploadBtn);
 }
 }

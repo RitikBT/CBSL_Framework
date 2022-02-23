@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite1">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
                     </span>
                     <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="org.cbsl.testcases.TC_AddEmployee" hash-for-method="testcase001_loginTest">testcase001_loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="org.cbsl.testcases.TC_AddEmployee" hash-for-method="testcase001_loginTest">testcase001_loginTest</a> <!-- method navigator-link -->
@@ -132,6 +137,13 @@
                   <span class="method-name">testcase001_loginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase001_loginTest">
+                  </a> <!-- testcase001_loginTest -->
+                  <span class="method-name">testcase001_loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite1-class-passed -->
         </div> <!-- panel Suite1 -->
@@ -150,6 +162,12 @@
       &lt;class name=&quot;org.cbsl.testcases.TC_AddEmployee&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;8&quot; name=&quot;EdgeTest&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.cbsl.testcases.TC_AddEmployee&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EdgeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,6 +180,9 @@
             <ul>
               <li>
                 <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EdgeTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,11 +208,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testcase001_loginTest')
 data.setCell(0, 2, 'org.cbsl.testcases.TC_AddEmployee')
-data.setCell(0, 3, 101368);
+data.setCell(0, 3, 76387);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testcase001_loginTest')
+data.setCell(1, 2, 'org.cbsl.testcases.TC_AddEmployee')
+data.setCell(1, 3, 60552);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
@@ -227,21 +252,41 @@ return data;
                 <span class="method-name">setReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">launch(public void org.cbsl.testcases.TC_AddEmployee.testcase001_loginTest() throws java.lang.Exception, ch...)</span>
-                <span class="method-start">111 ms</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch(public void org.cbsl.testcases.TC_AddEmployee.testcase001_loginTest() throws java.lang.Exception, ed...)</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcase001_loginTest</span>
-                <span class="method-start">46100 ms</span>
+                <span class="method-start">66038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testcase001_loginTest</span>
+                <span class="method-start">67594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testcase001_loginTest status=SUCCESS method=TC_AddEmployee.testcase001_loginTest()[...)</span>
-                <span class="method-start">147477 ms</span>
+                <span class="method-start">126593 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">147490 ms</span>
+                <span class="method-start">126599 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testcase001_loginTest status=SUCCESS method=TC_AddEmployee.testcase001_loginTest()[...)</span>
+                <span class="method-start">143982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">143983 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

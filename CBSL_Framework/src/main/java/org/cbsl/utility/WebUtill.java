@@ -144,9 +144,12 @@ public class WebUtill extends Config {
 
 
 	}
-
-	public String randomString() {
-		return RandomStringUtils.randomAlphanumeric(4);
+	public String randomNumeric(int randomNumericSize) {
+		return RandomStringUtils.randomNumeric(randomNumericSize);
+	}
+	
+	public String randomString(int randomAlphanumericSize) {
+		return RandomStringUtils.randomAlphanumeric(randomAlphanumericSize);
 	}
 
 	public void clearAllCookies() {
