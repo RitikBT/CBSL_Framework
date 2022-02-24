@@ -2,6 +2,8 @@ package org.cbsl.testcases;
 
 import org.apache.log4j.Logger;
 import org.cbsl.pageObjects.pim.ContactDetailsPage;
+import org.cbsl.pageObjects.pim.DependentPage;
+import org.cbsl.pageObjects.pim.EmergencyContactsPage;
 import org.cbsl.pageObjects.pim.PIMPage;
 import org.cbsl.pageObjects.pim.PersonalDetailsPage;
 import org.cbsl.utility.BaseClass;
@@ -9,7 +11,10 @@ import org.testng.annotations.Test;
 
 public class TC_AddEmployee extends BaseClass {
 	
-	private static final Logger logger = Logger.getLogger(TC_AddEmployee.class);
+	
+	private DependentPage depPage;
+	
+	private  final Logger logger = Logger.getLogger(TC_AddEmployee.class);
 	
 	@Test(priority = 1)
 	public void testcase001_loginTest() throws Exception {
@@ -33,14 +38,20 @@ public class TC_AddEmployee extends BaseClass {
 		personalDetails.selChkBxSmoker('N');
 		personalDetails.clickOnSavebtn();
 		personalDetails.bloodType("AB-");
-		personalDetails.fileUpload();
+		//personalDetails.fileUpload();
 		
 		contactDetails=new ContactDetailsPage(utill);
 		contactDetails.navigateToContactDetailPage();
 		contactDetails.contactDetailsFields();
 		//contactDetails.uploadFile();
 		
+		emgContact=new EmergencyContactsPage(utill);
+		emgContact.navigateToEmergencyContact();
+		emgContact.addEmergencyContacts();
 		
+		depPage=new DependentPage(utill);
+		depPage.naviagteToDependent();
+		depPage.addDependentField();
 		
 		
 		logger.info("Personal Details has been filled");

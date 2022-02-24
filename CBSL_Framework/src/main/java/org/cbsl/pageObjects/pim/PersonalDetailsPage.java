@@ -37,7 +37,7 @@ public class PersonalDetailsPage {
 	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn; 
 
 	
-	private final static Logger logger=Logger.getLogger(PersonalDetailsPage.class);
+	private final  Logger logger=Logger.getLogger(PersonalDetailsPage.class);
 
 
 	WebUtill utill;
@@ -100,11 +100,9 @@ public class PersonalDetailsPage {
 		switch(sel_Y_or_N) {
 		case 'Y':
 			utill.click(chkbxSmoker);
-			BaseClass.test.log(Status.PASS, "Smoker checkBox is checked");
 			logger.info("Smoker Check Box is selected...");
 			break;
 		case 'N':
-			BaseClass.test.log(Status.PASS, "Smoker checkBox is unchecked");
 			logger.info("Smoker Check Box is unselected...");
 			break;
 		default:
@@ -114,6 +112,8 @@ public class PersonalDetailsPage {
 
 	public void clickOnSavebtn() {
 		utill.click(btnEdit_Save);
+		
+		logger.info("Personal Details added successfully....");
 	}
 
 
@@ -121,6 +121,7 @@ public class PersonalDetailsPage {
 	public void bloodType(String bloodType) {
 		utill.click(btEdit_CustomField);
 		utill.selectDropDownValue(bloodTypeDropDown, "value", bloodType);
+		logger.info("Blood type addedd  "+ bloodType);
 
 	}
 

@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.cbsl.testcases.TC_AddEmployee">
+      <class name="GmailLogin">
         <methods>
-          <include name="getResult"/>
-          <include name="launch"/>
-          <include name="endReport"/>
-          <include name="testcase001_loginTest"/>
-          <include name="setReport"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- org.cbsl.testcases.TC_AddEmployee -->
+      </class> <!-- GmailLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

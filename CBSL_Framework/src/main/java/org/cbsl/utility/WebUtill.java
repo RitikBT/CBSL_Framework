@@ -39,7 +39,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebUtill extends Config {
 
-	public static  final Logger logger = Logger.getLogger(WebUtill.class);
+	public   final Logger logger = Logger.getLogger(WebUtill.class);
 
 	private   WebDriver driver=null;
 
@@ -70,7 +70,7 @@ public class WebUtill extends Config {
 
 		try {
 			we.click();
-			BaseClass.test.log(Status.PASS, "Click on button");
+			// BaseClass.test.log(Status.PASS, "Click on button");
 			logger.info("Click on "+we);
 		}
 		catch(InvalidArgumentException e1) {
@@ -93,7 +93,7 @@ public class WebUtill extends Config {
 		try {
 			we.clear();
 			we.sendKeys(inputData);
-			BaseClass.test.log(Status.PASS, inputData+" is entered in text box");
+		//	BaseClass.test.log(Status.PASS, inputData+" is entered in text box");
 			logger.info(inputData+" is entered in text box.");
 		}
 		catch (NoSuchElementException e) {
@@ -342,7 +342,7 @@ public class WebUtill extends Config {
 		FileUtils.copyFile(scrFile, strFile);
 		// To add it in the extent report 
 		Reporter.log("<a href='"+ strFile.getAbsolutePath() + "'> <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>",true);
-		BaseClass.test.log(Status.PASS, "<a href='"+ strFile.getAbsolutePath() + "'> <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+	//	BaseClass.test.log(Status.PASS, "<a href='"+ strFile.getAbsolutePath() + "'> <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
 
 		return  destFile;
 

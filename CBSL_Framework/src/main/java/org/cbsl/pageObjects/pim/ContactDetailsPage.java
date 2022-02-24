@@ -2,6 +2,7 @@ package org.cbsl.pageObjects.pim;
 
 import java.awt.AWTException;
 
+import org.apache.log4j.Logger;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +27,7 @@ public class ContactDetailsPage {
 	@FindBy(xpath = "//input[@id='ufile']") private WebElement chooseFileBtn;
 	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn;
 		
+	private final Logger logger=Logger.getLogger(getClass());
 	
 	WebUtill utill;
 	public ContactDetailsPage(WebUtill utill) {
@@ -50,6 +52,8 @@ public class ContactDetailsPage {
 		utill.setTextBoxValue(editBoxMobile, "9876543210");
 		utill.setTextBoxValue(editBoxWorkEmail, "vikas"+utill.randomString(2)+"@gmail.com");
 		utill.click(saveBtn);
+		
+		logger.info("Contact details addedd........");
 		
 	}
 public void uploadFile() {

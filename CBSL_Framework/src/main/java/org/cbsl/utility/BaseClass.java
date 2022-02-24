@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 import org.apache.log4j.Logger;
 import org.cbsl.pageObjects.login.LoginPage;
 import org.cbsl.pageObjects.pim.ContactDetailsPage;
+import org.cbsl.pageObjects.pim.EmergencyContactsPage;
 import org.cbsl.pageObjects.pim.PIMPage;
 import org.cbsl.pageObjects.pim.PersonalDetailsPage;
 import org.testng.ITestResult;
@@ -32,16 +33,17 @@ public class BaseClass {
 	protected PIMPage pimPage;
 	protected PersonalDetailsPage personalDetails;
 	protected ContactDetailsPage contactDetails;
+	protected EmergencyContactsPage emgContact;
 
-	public static ExtentHtmlReporter htmlReporter;
-	public static  ExtentReports extent;
-	public static ExtentTest test;
+	public  ExtentHtmlReporter htmlReporter;
+	public   ExtentReports extent;
+	public  ExtentTest test;
 
 
 	protected WebUtill utill=new WebUtill();
 	protected Config conPro= new Config();
 
-	private static final Logger logger = Logger.getLogger(BaseClass.class);
+	private  final Logger logger = Logger.getLogger(BaseClass.class);
 
 
 	@BeforeTest

@@ -14,7 +14,7 @@ public class LoginPage {
 	@FindBy(xpath="//input[@id='btnLogin']") private WebElement btnLogin;
 
 	WebUtill loginutill;
-	private static final Logger logger = Logger.getLogger(LoginPage.class);
+	private  final Logger logger = Logger.getLogger(LoginPage.class);
 
 	public LoginPage(WebUtill utill) {
 		loginutill=utill;
