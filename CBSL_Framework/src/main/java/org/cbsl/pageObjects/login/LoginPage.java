@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-	@FindBy(xpath = "//input[@id='txtUsername']") 	private WebElement txtUserID;
-	@FindBy(xpath = "//input[@id='txtPassword']") private WebElement txtPwd;
-	@FindBy(xpath="//input[@id='btnLogin']") private WebElement btnLogin;
+	@FindBy(xpath = "//input[@name='username']") 	private WebElement txtUserID;
+	@FindBy(xpath = "//input[@name='password']") private WebElement txtPwd;
+	@FindBy(xpath="//button[@type='submit']") private WebElement btnLogin;
 
 	WebUtill loginutill;
 	private  final Logger logger = Logger.getLogger(LoginPage.class);

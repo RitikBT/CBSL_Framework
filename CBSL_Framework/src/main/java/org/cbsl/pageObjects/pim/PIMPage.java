@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PIMPage {
 	
-	@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']") private WebElement linkPIM;
-	@FindBy(xpath = "//input[@id='btnAdd']") private WebElement btnAdd;
-	@FindBy(xpath = "//input[@id='firstName']") private WebElement txtFirstName;
-	@FindBy(xpath = "//input[@id='lastName']") private WebElement txtLastName;
-	@FindBy(xpath = "//input[@id='btnSave']") private WebElement btnSave;
-	@FindBy(xpath= "//input[@id='employeeId']") private WebElement employeeID;
+	@FindBy(xpath = "//ul[@class='oxd-main-menu']//span[text()='PIM']") private WebElement linkPIM;
+	@FindBy(xpath = "//div[@class='orangehrm-header-container']//i") private WebElement btnAdd;
+	@FindBy(xpath = "//input[@name='firstName']") private WebElement txtFirstName;
+	@FindBy(xpath = "//input[@name='lastName']") private WebElement txtLastName;
+	@FindBy(xpath = "//button[@type='submit']") private WebElement btnSave;
+	@FindBy(xpath= "//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']") private WebElement employeeID;
 	
 	WebUtill utill;
 	
@@ -24,8 +24,8 @@ public class PIMPage {
 	public void navigateToPIM() {
 		utill.click(linkPIM);
 	}
-	public void setEmpID() {
-		utill.setTextBoxValue(employeeID, utill.randomNumeric(5));
+	public String setEmpID() {
+	return	utill.getText(employeeID);
 	}
 	
 	public void clickAddbtn() {

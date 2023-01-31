@@ -36,15 +36,16 @@ public class BaseClass {
 	protected EmergencyContactsPage emgContact;
 
 	public  ExtentHtmlReporter htmlReporter;
-	public   ExtentReports extent;
+	public  ExtentReports extent;
 	public  ExtentTest test;
 
 
 	protected WebUtill utill=new WebUtill();
-	protected Config conPro= new Config();
+//	protected Config conPro= new Config();
 
 	private  final Logger logger = Logger.getLogger(BaseClass.class);
 
+	private static ThreadLocal<ExtentTest> extentTest= new ThreadLocal<ExtentTest>();
 
 	@BeforeTest
 	public void setReport() {
@@ -59,18 +60,20 @@ public class BaseClass {
 
 		htmlReporter.config().setDocumentTitle("Automation Report"); 
 		// Name of the report
-		htmlReporter.config().setReportName("Functional Report "); 
+		htmlReporter.config().setReportName("Functional Report"); 
 		// Dark Theme
 		htmlReporter.config().setTheme(Theme.STANDARD);			
 	}
 
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun =true )
-	public void launch(Method methodName,String browser) {
-
-		utill.launchBrowser(browser);
+	public void launch(Method methodName,String b) {
+		test=extent.createTest(methodName.getName());
+		extentTest.set(test);
+		utill.launchBrowser(b);
 		logger.info("Browser launched...");
-		utill.openUrl(utill.getProperty("url"));//https://opensource-demo.orangehrmlive.com/
+	utill.openUrl(utill.getProperty("url"));//https://opensource-demo.orangehrmlive.com/
+	//utill.getDriver().set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilityFactory.getCapabilities(browser)));
 		test=extent.createTest(methodName.getName());
 		loginPg =new LoginPage(utill);
 		loginPg.setPwd(utill.getProperty("userPwd"));
@@ -98,6 +101,7 @@ public class BaseClass {
 				test.fail("<b><font color=red>"+"Screenshot of failure "+ "</font></b>");
 				String screenshotPath = utill.takeSnapshot(result.getName());	
 				logger.info("Screenshot taken for failed "+result.getName()+" testcases");
+				extentTest.get().fail(result.getThrowable());
 			}catch (IOException e) {
 				test.fail("Test Failed, cannot attach screenshot");
 			}
@@ -108,12 +112,12 @@ public class BaseClass {
 			//logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE)); 
 		} 
-		else if(result.getStatus() == ITestResult.SUCCESS)
-		{
+		else if(result.getStatus() == ITestResult.SUCCESS){
 
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
 		}
-		//	utill.closeBrowser();
+		
+			utill.closeBrowser();
 	}
 
 	@AfterTest
