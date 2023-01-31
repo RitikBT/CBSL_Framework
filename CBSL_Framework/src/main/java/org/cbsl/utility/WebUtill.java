@@ -33,28 +33,26 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
-import com.aventstack.extentreports.Status;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebUtill extends Config {
 
-	public   final Logger logger = Logger.getLogger(WebUtill.class);
+	public final Logger logger = Logger.getLogger(WebUtill.class);
 
-	private   WebDriver driver=null;
+	private WebDriver driver = null;
 
-
-	public   WebDriver getDriver() {
+	public WebDriver getDriver() {
 		return driver;
 	}
 
 	/**
 	 * This function will pause the current thread by specified time in seconds.
+	 * 
 	 * @param timeOutInSeconds time in seconds.
 	 */
-	public void holdOn(int timeOutInSecond)  {
+	public void holdOn(int timeOutInSecond) {
 		try {
-			Thread.sleep(timeOutInSecond*1000);
+			Thread.sleep(timeOutInSecond * 1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -62,92 +60,93 @@ public class WebUtill extends Config {
 	}
 
 	/**
-	 * This function will click on web element and will wait for page to load completely.
+	 * This function will click on web element and will wait for page to load
+	 * completely.
+	 * 
 	 * @param element Web element which you want to get clicked.
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
-	public void click(WebElement we ) {
+	public void click(WebElement we) {
 
 		try {
 			we.click();
 			// BaseClass.test.log(Status.PASS, "Click on button");
-			logger.info("Click on "+we);
-		}
-		catch(InvalidArgumentException e1) {
+			logger.info("Click on " + we);
+		} catch (InvalidArgumentException e1) {
 			new Actions(driver).click(we).build().perform();
-		}
-		catch (NoSuchElementException e) {
-			logger.info("ElementNotVisibleException occured try again on click "+e);
+		} catch (NoSuchElementException e) {
+			logger.info("ElementNotVisibleException occured try again on click " + e);
 			jsClick(we);
 		}
 	}
 
-
 	/**
-	 * This function will input value in Lookups present in the application and then click on search to get the desired result.
+	 * This function will input value in Lookups present in the application and then
+	 * click on search to get the desired result.
+	 * 
 	 * @param locatorName Locator Name of webelement defined in Locator Source
 	 * @return String value
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
-	public String setTextBoxValue(WebElement we ,String inputData) {
+	public String setTextBoxValue(WebElement we, String inputData) {
 		try {
 			we.clear();
 			we.sendKeys(inputData);
-		//	BaseClass.test.log(Status.PASS, inputData+" is entered in text box");
-			logger.info(inputData+" is entered in text box.");
-		}
-		catch (NoSuchElementException e) {
+			// BaseClass.test.log(Status.PASS, inputData+" is entered in text box");
+			logger.info(inputData + " is entered in text box.");
+		} catch (NoSuchElementException e) {
 			logger.info(e);
 			holdOn(5);
 			we.clear();
 			we.sendKeys(inputData);
-		}
-		catch (WebDriverException e) {
+		} catch (WebDriverException e) {
 			logger.info(e);
 			jsSetTextBoxValue(we, inputData);
 
 		}
-		return inputData;	
+		return inputData;
 	}
 
-
-	/** This function will return  inner-text of the webelement which is fetched from the locater name provided.
+	/**
+	 * This function will return inner-text of the webelement which is fetched from
+	 * the locater name provided.
+	 * 
 	 * @param locaterName Locater Name of webElement defined in Locater Source
 	 * @return String inner text of specified weElement.
-	 */	
+	 */
+
 	public String getText(WebElement element) {
 		return element.getText();
 	}
 
 	public void launchBrowser(String browserName) {
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver =new ChromeDriver();
+			driver = new ChromeDriver();
 
-		}else if(browserName.equalsIgnoreCase("firefox")) {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.chromedriver().setup();
-			driver=new FirefoxDriver();
+			driver = new FirefoxDriver();
 
-		}else if (browserName.equalsIgnoreCase("opera")) {
+		} else if (browserName.equalsIgnoreCase("opera")) {
 			WebDriverManager.operadriver().setup();
 			driver = new OperaDriver();
-		}else if (browserName.equalsIgnoreCase("edge")) {
+		} else if (browserName.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-		}
-		else
+		} else
 			System.out.println("Please Enter Browser Name: Chrome or Firefox");
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 
-
 	}
+
 	public String randomNumeric(int randomNumericSize) {
 		return RandomStringUtils.randomNumeric(randomNumericSize);
 	}
-	
+
 	public String randomString(int randomAlphanumericSize) {
 		return RandomStringUtils.randomAlphanumeric(randomAlphanumericSize);
 	}
@@ -156,12 +155,18 @@ public class WebUtill extends Config {
 		driver.manage().deleteAllCookies();
 	}
 
-	public void windowSize(int width, int height ) {
+	public String randomAlpha() {
+		String nameString = RandomStringUtils.randomNumeric(3) + RandomStringUtils.randomAlphanumeric(7);
+		return nameString;
+	}
+
+	public void windowSize(int width, int height) {
 		driver.manage().window().setSize(new Dimension(width, height));
 	}
 
 	/**
 	 * This function will return status of webelement in boolean format.
+	 * 
 	 * @param locatorName Locator name provided in the locator source.
 	 * @return True if element is enabled, otherwise false.
 	 */
@@ -171,6 +176,7 @@ public class WebUtill extends Config {
 
 	/**
 	 * This function will return display status of webelement in boolean format.
+	 * 
 	 * @param locatorName Locator name provided in the locator source.
 	 * @return True if element is visible, otherwise false.
 	 */
@@ -183,109 +189,107 @@ public class WebUtill extends Config {
 	}
 
 	public void openUrl(String url) {
-		try{
-			driver.get(url);
-			logger.info( url+" opened successfully");
-		}catch(WebDriverException e){
-			logger.debug( "Error occured while opening url- "+url, e);
-		}catch(NullPointerException e){
-			logger.debug( "Error occured while opening url. webdriver object has null value - ", e);
+		try {
+			// driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
+			// capabilityFactory.getCapabilities(browser)));
+			driver.navigate().to(url);
+			logger.info(url + " opened successfully");
+		} catch (WebDriverException e) {
+			logger.debug("Error occured while opening url- " + url, e);
+		} catch (NullPointerException e) {
+			logger.debug("Error occured while opening url. webdriver object has null value - ", e);
 		}
 	}
 
 	public void closeBrowser() {
-		driver.close();	
+		driver.close();
 	}
 
 	public void quitBrowser() {
 		driver.quit();
 	}
-	
+
 	/**
-	 *  This function will switch to main frame window.
-	 *  @param no params.
+	 * This function will switch to main frame window.
+	 * 
+	 * @param no params.
 	 */
 	public void switchToMainWindowFrame() {
 		try {
 			driver.switchTo().defaultContent();
-		}catch (Exception e) {
-			logger.error("Unable to switch to main window "+e);
-		}	
+		} catch (Exception e) {
+			logger.error("Unable to switch to main window " + e);
+		}
 	}
-	
+
 	/**
-	 *  This function will switch to parent frame window.
-	 *  @param no params.
+	 * This function will switch to parent frame window.
+	 * 
+	 * @param no params.
 	 */
 	public void switchToParentFrame() {
 		try {
 			driver.switchTo().parentFrame();
-		}catch(Exception e) {
+		} catch (Exception e) {
 			logger.error("Parent frame unavailable");
 		}
 	}
-	
 
 	public void handleAlertAccept() {
-		int i=0;
-		while(i++<10) {
+		int i = 0;
+		while (i++ < 10) {
 			try {
 				driver.switchTo().alert().accept();
 				break;
 			} catch (NoAlertPresentException e) {
 				try {
 					Thread.sleep(1000);
-				}
-				catch (InterruptedException e1) {
+				} catch (InterruptedException e1) {
 					e1.printStackTrace();
 				}
 				continue;
 			}
 		}
 	}
-
 
 	public void handleAlertDismiss() {
-		int i=0;
-		while(i++<5) {
-			try{
+		int i = 0;
+		while (i++ < 5) {
+			try {
 				driver.switchTo().alert().dismiss();
 				break;
-			} catch(NoAlertPresentException e){
+			} catch (NoAlertPresentException e) {
 				try {
 					Thread.sleep(1000);
-				}catch (InterruptedException e1) {
+				} catch (InterruptedException e1) {
 					e1.printStackTrace();
 				}
 				continue;
 			}
 		}
 	}
-
 
 	public String handleAlertGetText() {
-		int i=0;
-		String alertTextString=null;
-		while(i++<5){
+		int i = 0;
+		String alertTextString = null;
+		while (i++ < 5) {
 			try {
-				alertTextString=	driver.switchTo().alert().getText();
-			}catch(NoAlertPresentException e) {
+				alertTextString = driver.switchTo().alert().getText();
+			} catch (NoAlertPresentException e) {
 				try {
 					Thread.sleep(1000);
-				}catch (InterruptedException e1) {
+				} catch (InterruptedException e1) {
 					e1.printStackTrace();
 				}
 				continue;
 			}
 		}
-		return  alertTextString;
+		return alertTextString;
 
 	}
 
-
-
 	public String getTitleName() {
-		return	driver.getTitle();
+		return driver.getTitle();
 	}
 
 	public String getUrl() {
@@ -293,10 +297,10 @@ public class WebUtill extends Config {
 	}
 
 	public void getWindowHandles(String expWindowTitle) {
-		Set<String> windows=	driver.getWindowHandles();
-		for (String windoName:windows) {
-			String actWindowTitle=	driver.switchTo().window(windoName).getTitle();
-			if(actWindowTitle.equalsIgnoreCase(expWindowTitle)) {
+		Set<String> windows = driver.getWindowHandles();
+		for (String windoName : windows) {
+			String actWindowTitle = driver.switchTo().window(windoName).getTitle();
+			if (actWindowTitle.equalsIgnoreCase(expWindowTitle)) {
 				break;
 			}
 		}
@@ -304,101 +308,94 @@ public class WebUtill extends Config {
 
 	public void selectDropDownValue(WebElement we, String type, String value) {
 
-		Select sel=	new Select(we);
-
-		switch(type) {
-		case "index" :
+		Select sel = new Select(we);
+		switch (type) {
+		case "index":
 			sel.selectByIndex(Integer.parseInt(value));
 			break;
-
-		case "value" :
+		case "value":
 			sel.selectByValue(value);
 			break;
-
-		case "visiabletext" :
+		case "visiabletext":
 			sel.selectByVisibleText(value);
 			break;
-
 		default:
-			System.out.println("Please Pass correct selection criteria.....");
+			System.out.println("Please Enter correct selection criteria.....");
 			System.out.println("Type is exist: value, index and visiabletext ");
 			break;
 		}
-
 	}
 
 	public void clear(WebElement we) {
 		we.clear();
 	}
+
 	public String takeSnapshot(String methodName) throws IOException {
 
-
-		String dateAndTimeFormat=new SimpleDateFormat(" yyyy-MM-dd hhmmss").format(new Date());
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destFile="ScreenShot//"+methodName+dateAndTimeFormat+".png";
-		//String timeStamp=SystemUtil.getObject().getTimeStamp(Constants.DATE_FORMAT_PATTERN);
-		//		File destFile=new File(System.getProperty(USER_DIR)+File.separator+"test-output"+ File.separator+methodName+"_"+timeStamp+".png");
-		File strFile =new File(destFile);
+		String dateAndTimeFormat = new SimpleDateFormat(" yyyy-MM-dd hhmmss").format(new Date());
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String destFile = "ScreenShot//" + methodName + dateAndTimeFormat + ".png";
+		// String
+		// timeStamp=SystemUtil.getObject().getTimeStamp(Constants.DATE_FORMAT_PATTERN);
+		// File destFile=new
+		// File(System.getProperty(USER_DIR)+File.separator+"test-output"+
+		// File.separator+methodName+"_"+timeStamp+".png");
+		File strFile = new File(destFile);
 		FileUtils.copyFile(scrFile, strFile);
-		// To add it in the extent report 
-		Reporter.log("<a href='"+ strFile.getAbsolutePath() + "'> <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>",true);
-	//	BaseClass.test.log(Status.PASS, "<a href='"+ strFile.getAbsolutePath() + "'> <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+		// To add it in the extent report
+		Reporter.log("<a href='" + strFile.getAbsolutePath() + "'> <img src='" + strFile.getAbsolutePath()
+				+ "' height='100' width='100'/> </a>", true);
+		// BaseClass.test.log(Status.PASS, "<a href='"+ strFile.getAbsolutePath() + "'>
+		// <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/>
+		// </a>");
 
-		return  destFile;
+		return destFile;
 
-
-		/***		String dateAndTimeFormat=new SimpleDateFormat(" yyyy-MM-dd hhmmss").format(new Date());
-//
-//		TakesScreenshot snapshot=(TakesScreenshot)driver;
-//		File srcFile=	snapshot.getScreenshotAs(OutputType.FILE);
-//		String fileDestination="ScreenShot//"+imgName+dateAndTimeFormat+".png";
-//		File strFile=new File(fileDestination);
-//		try {
-//			FileUtils.copyFile(srcFile, strFile);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		return fileDestination;
+		/***
+		 * String dateAndTimeFormat=new SimpleDateFormat(" yyyy-MM-dd
+		 * hhmmss").format(new Date()); // // TakesScreenshot
+		 * snapshot=(TakesScreenshot)driver; // File srcFile=
+		 * snapshot.getScreenshotAs(OutputType.FILE); // String
+		 * fileDestination="ScreenShot//"+imgName+dateAndTimeFormat+".png"; // File
+		 * strFile=new File(fileDestination); // try { // FileUtils.copyFile(srcFile,
+		 * strFile); // } catch (IOException e) { // // TODO Auto-generated catch block
+		 * // e.printStackTrace(); // } // return fileDestination;
 		 ***/
 	}
 
-	
-	public   JavascriptExecutor getJSExecutor(){
+	public JavascriptExecutor getJSExecutor() {
 		return ((JavascriptExecutor) driver);
-		
-	}
 
-	
+	}
 
 	/**
 	 * This method is for scrolling the page up
 	 */
 	public void jsScrollUpPage(int numberOfPixels) {
-		getJSExecutor().executeScript("window.scrollTo("+numberOfPixels+ ",0)");
+		getJSExecutor().executeScript("window.scrollTo(" + numberOfPixels + ",0)");
 	}
-	
+
 	/**
 	 * This method is for scrolling the page down
-	 */ 
+	 */
 	public void jsScrollDownPage(int numberOfPixels) {
-		getJSExecutor().executeScript("window.scrollTo(0,\""+numberOfPixels+"\")");
+		getJSExecutor().executeScript("window.scrollTo(0,\"" + numberOfPixels + "\")");
 
 	}
-	
+
 	/**
 	 * This method is used to scroll the page till the exact web element provided.
-	 * @param we Web element name 
+	 * 
+	 * @param we Web element name
 	 */
-//	public void scrollingToElementOfAPage(WebElement we) {
-//
-//		getJSExecutor().executeScript(JS_SCROLL_CODE, we);
-//	}
-
-	
+	// public void scrollingToElementOfAPage(WebElement we) {
+	//
+	// getJSExecutor().executeScript(JS_SCROLL_CODE, we);
+	// }
 
 	/**
 	 * This method is used to click on the particular element.
+	 * 
 	 * @param element Web Element
 	 */
 	public void jsClick(WebElement element) {
@@ -407,17 +404,19 @@ public class WebUtill extends Config {
 	}
 
 	/**
-	 * This method is used to set the particular value in the text box by using the Java Script.
+	 * This method is used to set the particular value in the text box by using the
+	 * Java Script.
+	 * 
 	 * @param locatorName Name of the locator for which you want to set the value.
-	 * @param value A string value which needs to be passed to the locator.
+	 * @param value       A string value which needs to be passed to the locator.
 	 */
 	public void jsSetTextBoxValue(WebElement element, String value) {
-		getJSExecutor().executeScript("arguments[0].value = '"+value+"';", element);
+		getJSExecutor().executeScript("arguments[0].value = '" + value + "';", element);
 
 	}
 
 	public void uploadFile(String pathOfFile) throws AWTException {
-		Robot robot= new Robot();
+		Robot robot = new Robot();
 		robot.setAutoDelay(2000);
 
 		StringSelection ss = new StringSelection(pathOfFile);
@@ -432,7 +431,7 @@ public class WebUtill extends Config {
 
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		
+
 	}
 
 }
