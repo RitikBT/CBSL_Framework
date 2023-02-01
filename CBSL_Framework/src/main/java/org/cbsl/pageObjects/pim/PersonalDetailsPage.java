@@ -9,19 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PersonalDetailsPage {
 
-	@FindBy(xpath = "//input[@id='btnSave']") private WebElement btnEdit_Save;
-	@FindBy(xpath = "//label[text()=\"Driver's License Number\"]/following::div[1]") private WebElement txtDLNumber;
+	@FindBy(xpath = "//div[@class='oxd-form-actions']/p/following-sibling::button") private WebElement btnEdit_Save;
+	@FindBy(xpath = "//label[contains(text(),'License Number')]/following::div[1]/input") private WebElement txtDLNumber;
 	@FindBy(xpath = "//label[text()='License Expiry Date']//following::div//input[1]") private WebElement txtDLExpDate;
-	
-	@FindBy(xpath = "//input[@id='personal_txtNICNo']") private WebElement txtSSNNumber;
-	@FindBy(xpath = "//input[@id='personal_txtSINNo']") private WebElement txtSINNum;
-	@FindBy(xpath = "//input[@id='personal_optGender_1']") private WebElement selMale;
-	@FindBy(xpath = "//input[@id='personal_optGender_2']") private WebElement selFemale;
+	@FindBy(xpath = "//label[contains(text(),'SSN')]/following::div[1]/input") private WebElement txtSSNNumber;
+	@FindBy(xpath = "//label[contains(text(),'SIN')]/following::div[1]/input") private WebElement txtSINNum;
+	@FindBy(xpath = "//label[text()='Male']") private WebElement selMale;
+	@FindBy(xpath = "//label[text()='Female']") private WebElement selFemale;
 	@FindBy(xpath = "//select[@id='personal_cmbMarital']") private WebElement selMaritalStatus;
-	@FindBy(xpath = "//select[@id='personal_cmbNation']") private WebElement seleNationality;
-	@FindBy(xpath = "//input[@id='personal_DOB']") private WebElement txtDOB;
-	@FindBy(xpath = "//input[@id='personal_txtEmpNickName']") private WebElement txtNickName;
-	@FindBy(xpath = "//input[@id='personal_chkSmokeFlag']") private WebElement chkbxSmoker;
+	@FindBy(xpath = "//label[contains(text(),'Nationality')]//following::div[@class='oxd-select-text-input'][1]") private WebElement seleNationality;
+	@FindBy(xpath = "//label[contains(text(),'Birth')]/following::input[1]") private WebElement txtDOB;
+	@FindBy(xpath = "//label[contains(text(),'Nick')]/following::div[1]/input") private WebElement txtNickName;
+	@FindBy(xpath = "//label[contains(text(),'Smoker')]//following::input[1]") private WebElement chkbxSmoker;
 	@FindBy(id="btnEditCustom") private WebElement btEdit_CustomField;
 	@FindBy(name="custom1") private WebElement bloodTypeDropDown;
 	@FindBy(id="btnAddAttachment") private WebElement btnAddAttachment;
@@ -49,14 +48,13 @@ public class PersonalDetailsPage {
 	}
 
 	public void enterLicenNumber(String licenNumber) {
-		utill.clear(txtDLNumber);
+	//	utill.clear(txtDLNumber);
 		utill.setTextBoxValue(txtDLNumber, licenNumber);
 	}
 
 	public void enterLicenExpDate(String yyyy_mm_dd_ExpDate) {
 		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate);
 		
-		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate);
 	}
 
 	public void enterSSN_Number(String ssnString ) {
@@ -70,6 +68,7 @@ public class PersonalDetailsPage {
 	}
 
 	public void selectGender(char select_M_Or_F) {
+		
 		switch (select_M_Or_F) {
 		case 'M':
 			utill.click(selMale);
@@ -81,9 +80,7 @@ public class PersonalDetailsPage {
 		}
 	}
 
-
 	public void enterDOB(String yyyy_mm_dd_selDOB) {
-		utill.clear(txtDOB);
 		utill.setTextBoxValue(txtDOB, yyyy_mm_dd_selDOB);
 	}
 

@@ -33,6 +33,8 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
+import com.aventstack.extentreports.Status;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebUtill extends Config {
@@ -67,17 +69,17 @@ public class WebUtill extends Config {
 	 * @throws InterruptedException
 	 */
 	public void click(WebElement we) {
-
+		String text=we.getText();
 		try {
-			we.click();
-			// BaseClass.test.log(Status.PASS, "Click on button");
-			logger.info("Click on " + we);
+			we.click();	
 		} catch (InvalidArgumentException e1) {
 			new Actions(driver).click(we).build().perform();
 		} catch (NoSuchElementException e) {
 			logger.info("ElementNotVisibleException occured try again on click " + e);
 			jsClick(we);
 		}
+		BaseClass.test.log(Status.PASS, "Click on button");
+		BaseClass.test.info("Click on " + text);
 	}
 
 	/**
@@ -92,8 +94,7 @@ public class WebUtill extends Config {
 		try {
 			we.clear();
 			we.sendKeys(inputData);
-			// BaseClass.test.log(Status.PASS, inputData+" is entered in text box");
-			logger.info(inputData + " is entered in text box.");
+			// BaseClass.test.log(Status.PASS, inputData+" is entered in text box");	
 		} catch (NoSuchElementException e) {
 			logger.info(e);
 			holdOn(5);
@@ -102,8 +103,9 @@ public class WebUtill extends Config {
 		} catch (WebDriverException e) {
 			logger.info(e);
 			jsSetTextBoxValue(we, inputData);
-
 		}
+		BaseClass.test.info(inputData + " is entered in text box.");
+		BaseClass.test.log(Status.PASS, inputData + " is entered in text box.");
 		return inputData;
 	}
 
@@ -345,9 +347,8 @@ public class WebUtill extends Config {
 		// To add it in the extent report
 		Reporter.log("<a href='" + strFile.getAbsolutePath() + "'> <img src='" + strFile.getAbsolutePath()
 				+ "' height='100' width='100'/> </a>", true);
-		// BaseClass.test.log(Status.PASS, "<a href='"+ strFile.getAbsolutePath() + "'>
-		// <img src='"+ strFile.getAbsolutePath() + "' height='100' width='100'/>
-		// </a>");
+		BaseClass.test.log(Status.PASS, "<a href='" + strFile.getAbsolutePath() + "'> <img src='"
+				+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
 
 		return destFile;
 
@@ -400,6 +401,7 @@ public class WebUtill extends Config {
 	 */
 	public void jsClick(WebElement element) {
 		getJSExecutor().executeScript("arguments[0].click()", element);
+		
 
 	}
 
