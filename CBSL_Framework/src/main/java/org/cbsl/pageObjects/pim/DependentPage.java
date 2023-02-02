@@ -33,7 +33,7 @@ public class DependentPage {
 
 	public void addDependentField() {
 		utill.click(addBtn);
-		utill.setTextBoxValue(addBtn, "Salini Verma");
+		utill.setTextBoxValue(dependentNameTxt, "Salini Verma");
 	//	utill.selectDropDownValue(dependentRelationshipTypeTxt, "value", "other");
 		utill.setTextBoxValue(dependentDOBtxt, "2000-02-03");
 		utill.click(saveBtn);

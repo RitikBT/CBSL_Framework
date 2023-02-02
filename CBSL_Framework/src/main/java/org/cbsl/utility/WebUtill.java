@@ -78,8 +78,8 @@ public class WebUtill extends Config {
 			logger.info("ElementNotVisibleException occured try again on click " + e);
 			jsClick(we);
 		}
-		BaseClass.test.log(Status.PASS, "Click on button");
-		BaseClass.test.info("Click on " + text);
+		BaseClass.test.log(Status.PASS, "Click on "+text);
+	//	BaseClass.test.info("Click on " + text);
 	}
 
 	/**
@@ -100,11 +100,11 @@ public class WebUtill extends Config {
 			holdOn(5);
 			we.clear();
 			we.sendKeys(inputData);
-		} catch (WebDriverException e) {
+		} catch (Exception e) {
 			logger.info(e);
 			jsSetTextBoxValue(we, inputData);
 		}
-		BaseClass.test.info(inputData + " is entered in text box.");
+	//	BaseClass.test.info(inputData + " is entered in text box.");
 		BaseClass.test.log(Status.PASS, inputData + " is entered in text box.");
 		return inputData;
 	}

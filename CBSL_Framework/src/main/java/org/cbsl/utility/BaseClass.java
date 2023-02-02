@@ -23,7 +23,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class BaseClass {
 
 	public ExtentHtmlReporter htmlReporter;
-	public ExtentReports extent;
+	public static ExtentReports extent;
 	public static ExtentTest test;
 
 	protected WebUtill utill = new WebUtill();
@@ -31,11 +31,11 @@ public class BaseClass {
 
 	private final Logger logger = Logger.getLogger(BaseClass.class);
 
-	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	@BeforeTest
 	public void setReport() {
-		htmlReporter = new ExtentHtmlReporter("ExtentReport/STMExtentReport.html");
+		htmlReporter = new ExtentHtmlReporter("ExtentReport/Automation Report.html");
 		// Create an object of Extent Reports
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
@@ -59,7 +59,6 @@ public class BaseClass {
 		utill.launchBrowser(browser);
 		test.info("browser Launched");
 		utill.openUrl(utill.getProperty("url"));
-		test = extent.createTest(methodName.getName());
 		LoginPage loginPg = new LoginPage(utill);
 		loginPg.setPwd(utill.getProperty("userPwd"));
 		loginPg.setUserID(utill.getProperty("userID"));
@@ -72,8 +71,7 @@ public class BaseClass {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			// MarkupHelper is used to display the output in different colors
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
-			test.log(Status.FAIL,
-					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
+			test.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 
 			// To capture screenshot path and store the path of the screenshot in the string
 			// "screenshotPath"
@@ -85,7 +83,7 @@ public class BaseClass {
 			// To add it in the extent report
 
 			try {
-				test.fail("<b><font color=red>" + "Screenshot of failure " + "</font></b>");
+				test.pass("<b><font color=red>" + "Screenshot of failure " + "</font></b>");
 				String screenshotPath = utill.takeSnapshot(result.getName());
 				logger.info("Screenshot taken for failed " + result.getName() + " testcases");
 

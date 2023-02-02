@@ -31,7 +31,7 @@ public class TC_AddEmployee extends BaseClass {
 		personalDetails.enterSIN_Number("09876580000");
 		personalDetails.enterDOB("1995-03-26");
 		personalDetails.selectGender('M');
-		personalDetails.selChkBxSmoker('N');
+		personalDetails.selChkBxSmoker('Y');
 		personalDetails.clickOnSavebtn();
 		// personalDetails.bloodType("AB-");
 		// personalDetails.fileUpload();

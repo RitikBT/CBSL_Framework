@@ -20,7 +20,7 @@ public class PersonalDetailsPage {
 	@FindBy(xpath = "//label[contains(text(),'Nationality')]//following::div[@class='oxd-select-text-input'][1]") private WebElement seleNationality;
 	@FindBy(xpath = "//label[contains(text(),'Birth')]/following::input[1]") private WebElement txtDOB;
 	@FindBy(xpath = "//label[contains(text(),'Nick')]/following::div[1]/input") private WebElement txtNickName;
-	@FindBy(xpath = "//label[contains(text(),'Smoker')]//following::input[1]") private WebElement chkbxSmoker;
+	@FindBy(xpath = "//label[contains(text(),'Smoker')]//following::span[1]") private WebElement chkbxSmoker;
 	@FindBy(id="btnEditCustom") private WebElement btEdit_CustomField;
 	@FindBy(name="custom1") private WebElement bloodTypeDropDown;
 	@FindBy(id="btnAddAttachment") private WebElement btnAddAttachment;

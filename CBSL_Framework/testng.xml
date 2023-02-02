@@ -2,6 +2,11 @@
 
 <suite name="Suite1" verbose="8">
 
+<listeners>
+        <listener class-name="org.cbsl.ExtentListeners.AnnotationTransformer"/>
+        <listener class-name="org.cbsl.ExtentListeners.ExtentListener"></listener>
+  </listeners>
+
 	<test name="ChromeTest">
 
 		<parameter name="browser" value="chrome" />
