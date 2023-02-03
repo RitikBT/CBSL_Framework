@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="32891" started-at="2023-02-02T16:45:14 IST" finished-at="2023-02-02T16:45:46 IST">
+  <suite name="Suite1" duration-ms="33140" started-at="2023-02-03T18:08:30 IST" finished-at="2023-02-03T18:09:03 IST">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="32891" started-at="2023-02-02T16:45:14 IST" finished-at="2023-02-02T16:45:46 IST">
+    <test name="ChromeTest" duration-ms="33140" started-at="2023-02-03T18:08:30 IST" finished-at="2023-02-03T18:09:03 IST">
       <class name="org.cbsl.testcases.TC_AddEmployee">
-        <test-method status="PASS" signature="setReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="setReport" is-config="true" duration-ms="70" started-at="2023-02-02T16:45:14 IST" finished-at="2023-02-02T16:45:14 IST">
+        <test-method status="PASS" signature="setReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="setReport" is-config="true" duration-ms="107" started-at="2023-02-03T18:08:30 IST" finished-at="2023-02-03T18:08:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReport -->
-        <test-method status="PASS" signature="launch(java.lang.reflect.Method,java.lang.String)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="launch" is-config="true" duration-ms="14406" started-at="2023-02-02T16:45:14 IST" finished-at="2023-02-02T16:45:28 IST">
+        <test-method status="PASS" signature="launch(java.lang.reflect.Method,java.lang.String)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="launch" is-config="true" duration-ms="13367" started-at="2023-02-03T18:08:30 IST" finished-at="2023-02-03T18:08:43 IST">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="testcase001_loginTest()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="testcase001_loginTest" duration-ms="17869" started-at="2023-02-02T16:45:28 IST" finished-at="2023-02-02T16:45:46 IST">
+        <test-method status="PASS" signature="testcase001_loginTest()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="testcase001_loginTest" duration-ms="19068" started-at="2023-02-03T18:08:43 IST" finished-at="2023-02-03T18:09:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase001_loginTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="getResult" is-config="true" duration-ms="276" started-at="2023-02-02T16:45:46 IST" finished-at="2023-02-02T16:45:46 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="getResult" is-config="true" duration-ms="313" started-at="2023-02-03T18:09:02 IST" finished-at="2023-02-03T18:09:03 IST">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="endReport" is-config="true" duration-ms="242" started-at="2023-02-02T16:45:46 IST" finished-at="2023-02-02T16:45:46 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="endReport" is-config="true" duration-ms="258" started-at="2023-02-03T18:09:03 IST" finished-at="2023-02-03T18:09:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
