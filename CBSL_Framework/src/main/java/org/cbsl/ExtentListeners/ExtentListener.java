@@ -15,14 +15,13 @@ public class ExtentListener implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 
-		// ExtentTest test=
-		// BaseClass.extent.createTest(result.getTestClass().getName()+" @TestCase :
-		// "+result.getMethod().getMethodName());
+		
 		BaseClass.extentTest.set(BaseClass.test);
+		
 
 	}
 
-	@Override
+
 	public void onTestSuccess(ITestResult result) {
 
 		String methodName = result.getMethod().getMethodName();
