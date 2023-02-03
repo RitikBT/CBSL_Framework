@@ -1,26 +1,18 @@
 package org.cbsl.pageObjects.pim;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
-
 import org.apache.log4j.Logger;
-import org.cbsl.utility.BaseClass;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
-import com.aventstack.extentreports.Status;
 
 public class PersonalDetailsPage {
 
 	@FindBy(xpath = "//input[@id='btnSave']") private WebElement btnEdit_Save;
-	@FindBy(xpath = "//input[@id='personal_txtLicenNo']") private WebElement txtDLNumber;
-	@FindBy(xpath = "//input[@id='personal_txtLicExpDate']") private WebElement txtDLExpDate;
+	@FindBy(xpath = "//label[text()=\"Driver's License Number\"]/following::div[1]") private WebElement txtDLNumber;
+	@FindBy(xpath = "//label[text()='License Expiry Date']//following::div//input[1]") private WebElement txtDLExpDate;
+	
 	@FindBy(xpath = "//input[@id='personal_txtNICNo']") private WebElement txtSSNNumber;
 	@FindBy(xpath = "//input[@id='personal_txtSINNo']") private WebElement txtSINNum;
 	@FindBy(xpath = "//input[@id='personal_optGender_1']") private WebElement selMale;
@@ -36,17 +28,20 @@ public class PersonalDetailsPage {
 	@FindBy(xpath= "//input[@id='ufile']") private WebElement chooseFileBtn;
 	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn; 
 
-	
+
+
+
 	private final  Logger logger=Logger.getLogger(PersonalDetailsPage.class);
 
 
 	WebUtill utill;
+
 	public PersonalDetailsPage(WebUtill utill) {
 		this.utill=utill;
 		PageFactory.initElements(utill.getDriver(), this);
 
 	}
-	
+
 
 
 	public void clickEditbtn() {
@@ -59,7 +54,8 @@ public class PersonalDetailsPage {
 	}
 
 	public void enterLicenExpDate(String yyyy_mm_dd_ExpDate) {
-		utill.clear(txtDLExpDate);
+		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate);
+		
 		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate);
 	}
 
@@ -112,7 +108,7 @@ public class PersonalDetailsPage {
 
 	public void clickOnSavebtn() {
 		utill.click(btnEdit_Save);
-		
+
 		logger.info("Personal Details added successfully....");
 	}
 
@@ -126,14 +122,14 @@ public class PersonalDetailsPage {
 	}
 
 	public void fileUpload() throws AWTException, Exception {
-		
-	//	utill.jsUtil.scrollUpPage(2000);
+
+		//	utill.jsUtil.scrollUpPage(2000);
 		utill.click(btnAddAttachment);
 		Thread.sleep(3000);
 		utill.click(chooseFileBtn);
 
 		utill.uploadFile("C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot.png");
-		
+
 		utill.click(uploadBtn);
 
 	}
