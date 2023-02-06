@@ -9,12 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 public class EmergencyContactsPage {
 	
 	@FindBy(xpath = "//a[text()='Emergency Contacts']") private WebElement emergencyContactTab;
-	@FindBy(xpath = "//input[@id='btnAddContact']") private WebElement addEmegencyContBtn;
-	@FindBy(xpath = "//input[@id='emgcontacts_name']") private WebElement emgNametxt;
-	@FindBy(xpath = "//input[@id='emgcontacts_relationship']") private WebElement emgRelationshiptxt;
-	@FindBy(xpath = "//input[@id='emgcontacts_homePhone']") private WebElement emgTelephonetxt;
-	@FindBy(xpath = "//input[@id='emgcontacts_mobilePhone']") private WebElement emgMobiletxt;
-	@FindBy(xpath = "//input[@id='btnSaveEContact']") private WebElement addBtn;
+	@FindBy(xpath = "//div[@class='orangehrm-action-header']//button[1]") private WebElement addEmegencyContBtn;
+	@FindBy(xpath = "//label[contains(text(),'Name')]/following::input[1]") private WebElement emgNametxt;
+	@FindBy(xpath = "//label[contains(text(),'Relationship')]/following::input[1]") private WebElement emgRelationshiptxt;
+	@FindBy(xpath = "//label[contains(text(),'Home Telephone')]/following::input[1]") private WebElement emgTelephonetxt;
+	@FindBy(xpath = "//label[contains(text(),'Mobile')]/following::input[1]") private WebElement emgMobiletxt;
+	@FindBy(xpath = "//div[@class='oxd-form-actions']/p/following-sibling::button[2]") private WebElement saveBtn;
 	
 	
 	public final Logger logger=Logger.getLogger(getClass());
@@ -38,7 +38,7 @@ public class EmergencyContactsPage {
 		utill.setTextBoxValue(emgRelationshiptxt, "Brother");
 		utill.setTextBoxValue(emgTelephonetxt, "65430-001110");
 		utill.setTextBoxValue(emgMobiletxt, "9876543211");
-		utill.click(addBtn);
+		utill.click(saveBtn);
 		
 		logger.info("Emergency Contact Added Successfully....");
 		

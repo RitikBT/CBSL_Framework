@@ -1,1 +1,6 @@
-/.metadata/
+.metadata/
+test-output/
+target/
+ScreenShot/
+log/
+ExtentReport/
