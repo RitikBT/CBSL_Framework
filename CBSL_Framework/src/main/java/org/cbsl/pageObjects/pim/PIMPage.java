@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class PIMPage {
 	
 	@FindBy(xpath = "//ul[@class='oxd-main-menu']//span[text()='PIM']") private WebElement linkPIM;
-	@FindBy(xpath = "//div[@class='orangehrm-header-container']//i") private WebElement btnAdd;
+	@FindBy(xpath = "//div[@class='orangehrm-header-container']//button") private WebElement btnAdd;
 	@FindBy(xpath = "//input[@name='firstName']") private WebElement txtFirstName;
 	@FindBy(xpath = "//input[@name='lastName']") private WebElement txtLastName;
 	@FindBy(xpath = "//button[@type='submit']") private WebElement btnSave;
