@@ -2,10 +2,12 @@
 
 <suite name="Suite1" verbose="8">
 
-<listeners>
-        <listener class-name="org.cbsl.ExtentListeners.AnnotationTransformer"/>
-        <listener class-name="org.cbsl.ExtentListeners.ExtentListener"></listener>
-  </listeners>
+	<listeners>
+		<listener
+			class-name="org.cbsl.ExtentListeners.AnnotationTransformer" />
+		<listener
+			class-name="org.cbsl.ExtentListeners.ExtentListener" />
+	</listeners>
 
 	<test name="ChromeTest">
 
@@ -19,6 +21,4 @@
 			</class>
 		</classes>
 	</test>
-
-
 </suite>
