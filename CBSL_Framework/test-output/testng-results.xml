@@ -1,52 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="27132" started-at="2023-02-06T10:30:27 IST" finished-at="2023-02-06T10:30:54 IST">
+  <suite name="Demo Web test Suite" duration-ms="16516" started-at="2023-02-17T12:51:41 IST" finished-at="2023-02-17T12:51:57 IST">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="27132" started-at="2023-02-06T10:30:27 IST" finished-at="2023-02-06T10:30:54 IST">
-      <class name="org.cbsl.testcases.TC_AddEmployee">
-        <test-method status="PASS" signature="setReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="setReport" is-config="true" duration-ms="82" started-at="2023-02-06T10:30:27 IST" finished-at="2023-02-06T10:30:27 IST">
+    <test name="Test" duration-ms="16516" started-at="2023-02-17T12:51:41 IST" finished-at="2023-02-17T12:51:57 IST">
+      <class name="org.cbsl.newTestCase.TestModel">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="launchApplication" is-config="true" duration-ms="15227" started-at="2023-02-17T12:51:41 IST" finished-at="2023-02-17T12:51:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setReport -->
-        <test-method status="PASS" signature="launch(java.lang.reflect.Method,java.lang.String)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="launch" is-config="true" duration-ms="10045" started-at="2023-02-06T10:30:27 IST" finished-at="2023-02-06T10:30:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.cbsl.testcases.TC_AddEmployee.testcase001_loginTest() throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="launchApplication" is-config="true" duration-ms="15057" started-at="2023-02-17T12:51:41 IST" finished-at="2023-02-17T12:51:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="PASS" signature="testcase001_loginTest()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="testcase001_loginTest" duration-ms="16429" started-at="2023-02-06T10:30:37 IST" finished-at="2023-02-06T10:30:53 IST">
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="launchApplication" is-config="true" duration-ms="15752" started-at="2023-02-17T12:51:41 IST" finished-at="2023-02-17T12:51:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase001_loginTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="getResult" is-config="true" duration-ms="302" started-at="2023-02-06T10:30:53 IST" finished-at="2023-02-06T10:30:53 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testcase001_loginTest status=SUCCESS method=TC_AddEmployee.testcase001_loginTest()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="test03()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="test03" duration-ms="20" started-at="2023-02-17T12:51:56 IST" finished-at="2023-02-17T12:51:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:org.cbsl.testcases.TC_AddEmployee@58fdd99]" name="endReport" is-config="true" duration-ms="247" started-at="2023-02-06T10:30:53 IST" finished-at="2023-02-06T10:30:54 IST">
+        </test-method> <!-- test03 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="tearDown" is-config="true" duration-ms="1050" started-at="2023-02-17T12:51:56 IST" finished-at="2023-02-17T12:51:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- org.cbsl.testcases.TC_AddEmployee -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="test01()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="test01" duration-ms="15" started-at="2023-02-17T12:51:56 IST" finished-at="2023-02-17T12:51:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="tearDown" is-config="true" duration-ms="953" started-at="2023-02-17T12:51:56 IST" finished-at="2023-02-17T12:51:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="test02()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="test02" duration-ms="4" started-at="2023-02-17T12:51:57 IST" finished-at="2023-02-17T12:51:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.cbsl.newTestCase.TestModel@24a35978]" name="tearDown" is-config="true" duration-ms="683" started-at="2023-02-17T12:51:57 IST" finished-at="2023-02-17T12:51:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.cbsl.newTestCase.TestModel -->
+    </test> <!-- Test -->
+  </suite> <!-- Demo Web test Suite -->
 </testng-results>

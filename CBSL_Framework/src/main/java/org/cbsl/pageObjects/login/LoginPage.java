@@ -1,7 +1,6 @@
 package org.cbsl.pageObjects.login;
 
 import org.apache.log4j.Logger;
-import org.cbsl.utility.BaseClass;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
