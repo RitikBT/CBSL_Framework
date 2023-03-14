@@ -27,18 +27,18 @@ public class ImmigrationPage {
 	}
 	
 	public void navigateToImmigration() {
-		utill.click(null);
+		utill.click(nativeImmigration,"Immigration");
 	}
 	
 	public void addImmigrationField() {
-		utill.setTextBoxValue(immNumberTxt, "87665544");
-		utill.setTextBoxValue(immPassportIssueDate, "2020-02-10");
-		utill.setTextBoxValue(immPassportExpDate, "2030-02-10");
-		utill.setTextBoxValue(immEligibleStatus, "Done");
+		utill.setTextBoxValue(immNumberTxt, "87665544","number");
+		utill.setTextBoxValue(immPassportIssueDate, "2020-02-10","Passport Issue");
+		utill.setTextBoxValue(immPassportExpDate, "2030-02-10","Passport Exp");
+		utill.setTextBoxValue(immEligibleStatus, "Done","Eligible Status");
 		utill.selectDropDownValue(immPassportCountryName, "value", "India");
-		utill.setTextBoxValue(immReviewDate, "2022-02-10");
-		utill.setTextBoxValue(immCommentsTxt, "Welldone.....");
-		utill.click(saveBtn);
+		utill.setTextBoxValue(immReviewDate, "2022-02-10", "Review Date");
+		utill.setTextBoxValue(immCommentsTxt, "Welldone.....", "Comment ");
+		utill.click(saveBtn, "Save");
 		
 	}
 	

@@ -1,6 +1,7 @@
 package org.cbsl.pageObjects.pim;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +17,7 @@ public class DependentPage {
 	@FindBy(xpath = "//label[contains(text(),'Birth')]/following::input[1]") private WebElement dependentDOBtxt;
 	@FindBy(xpath = "//div[@class='oxd-form-actions']/p/following-sibling::button[2]") private WebElement saveBtn;
 
-	private final Logger logger=Logger.getLogger(getClass());
+	private final Logger logger=LogManager.getLogger(getClass());
 	
 	WebUtill utill;
 	public DependentPage(WebUtill utill) {
@@ -26,17 +27,17 @@ public class DependentPage {
 
 
 	public void naviagteToDependent() {
-		utill.click(dependenetsPage);
+		utill.click(dependenetsPage,"Dependemt");
 		logger.info("Navigate to dependent page.....");
 	}
 
 
 	public void addDependentField() {
-		utill.click(addBtn);
-		utill.setTextBoxValue(dependentNameTxt, "Salini Verma");
+		utill.click(addBtn, "Add");
+		utill.setTextBoxValue(dependentNameTxt, "Salini Verma", "Name");
 	//	utill.selectDropDownValue(dependentRelationshipTypeTxt, "value", "other");
-		utill.setTextBoxValue(dependentDOBtxt, "2000-02-03");
-		utill.click(saveBtn);
+		utill.setTextBoxValue(dependentDOBtxt, "2000-02-03", "DOB");
+		utill.click(saveBtn, "Save");
 		logger.info("Save dependent field.....");
 
 	}

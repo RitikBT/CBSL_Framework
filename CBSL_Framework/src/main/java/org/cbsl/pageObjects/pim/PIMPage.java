@@ -22,24 +22,24 @@ public class PIMPage {
 	}
 	 
 	public void navigateToPIM() {
-		utill.click(linkPIM);
+		utill.click(linkPIM, "PIM");
 	}
 	public String setEmpID() {
-	return	utill.getText(employeeID);
+	return	utill.getText(employeeID, "Emp ID");
 	}
 	
 	public void clickAddbtn() {
-	utill.click(btnAdd);	
+	utill.click(btnAdd, "Add");	
 	}
 	
 	public void setFirstName(String firstName) {
-		utill.setTextBoxValue(txtFirstName, firstName);
+		utill.setTextBoxValue(txtFirstName, firstName, "First Name");
 	}
 	public void setLastName(String lastName) {
-		utill.setTextBoxValue(txtLastName, lastName);
+		utill.setTextBoxValue(txtLastName, lastName, "Last Name");
 	}
 	public void clickSavebtn() {
-		utill.click(btnSave);
+		utill.click(btnSave,"Save");
 	}
 	
 	

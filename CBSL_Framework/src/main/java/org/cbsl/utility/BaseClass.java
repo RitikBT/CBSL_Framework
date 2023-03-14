@@ -3,7 +3,8 @@ package org.cbsl.utility;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.cbsl.pageObjects.login.LoginPage;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -29,7 +30,7 @@ public class BaseClass {
 	protected WebUtill utill = new WebUtill();
 //	protected Config conPro= new Config();
 
-	private final Logger logger = Logger.getLogger(BaseClass.class);
+	public final static Logger logger=LogManager.getLogger();
 
 	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 

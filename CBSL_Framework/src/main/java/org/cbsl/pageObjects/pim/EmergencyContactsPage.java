@@ -1,6 +1,7 @@
 package org.cbsl.pageObjects.pim;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +18,7 @@ public class EmergencyContactsPage {
 	@FindBy(xpath = "//div[@class='oxd-form-actions']/p/following-sibling::button[2]") private WebElement saveBtn;
 	
 	
-	public final Logger logger=Logger.getLogger(getClass());
+	public final static Logger logger=LogManager.getLogger();
 	
 	WebUtill utill;
 	
@@ -28,19 +29,19 @@ public class EmergencyContactsPage {
 	
 	
 	public void navigateToEmergencyContact() {
-		utill.click(emergencyContactTab);
+		utill.click(emergencyContactTab, "Contact");
 		
 	}
 	
 	public void addEmergencyContacts() {
-		utill.click(addEmegencyContBtn);
-		utill.setTextBoxValue(emgNametxt, "Suraj Sharma");
-		utill.setTextBoxValue(emgRelationshiptxt, "Brother");
-		utill.setTextBoxValue(emgTelephonetxt, "65430-001110");
-		utill.setTextBoxValue(emgMobiletxt, "9876543211");
-		utill.click(saveBtn);
+		utill.click(addEmegencyContBtn, "Emergency");
+		utill.setTextBoxValue(emgNametxt, "Suraj Sharma","Name");
+		utill.setTextBoxValue(emgRelationshiptxt, "Brother", "Relationship");
+		utill.setTextBoxValue(emgTelephonetxt, "65430-001110", "Telephone ");
+		utill.setTextBoxValue(emgMobiletxt, "9876543211", "Mobile");
+		utill.click(saveBtn, "Save");
 		
-		logger.info("Emergency Contact Added Successfully....");
+	//	logger.info("Emergency Contact Added Successfully....");
 		
 		
 	}

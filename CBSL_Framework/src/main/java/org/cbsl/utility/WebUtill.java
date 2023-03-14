@@ -14,7 +14,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,7 +24,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -39,7 +39,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebUtill extends Config {
 
-	public final Logger logger = Logger.getLogger(WebUtill.class);
+	public final static Logger logger = LogManager.getLogger();
 
 	private WebDriver driver = null;
 
@@ -68,18 +68,18 @@ public class WebUtill extends Config {
 	 * @param element Web element which you want to get clicked.
 	 * @throws InterruptedException
 	 */
-	public void click(WebElement we) {
-		String text=we.getText();
+	public void click(WebElement we, String fieldName) {
+
 		try {
-			we.click();	
+			we.click();
 		} catch (InvalidArgumentException e1) {
 			new Actions(driver).click(we).build().perform();
 		} catch (NoSuchElementException e) {
-			logger.info("ElementNotVisibleException occured try again on click " + e);
 			jsClick(we);
+		} catch (Exception e) {
+//			ExtentFactory.getInstance().getExtent().log(Status.FAIL,"Unable to click on field " + fieldName + " due to exception " + e);
 		}
-		BaseClass.test.log(Status.PASS, "Click on "+text);
-	//	BaseClass.test.info("Click on " + text);
+
 	}
 
 	/**
@@ -90,22 +90,18 @@ public class WebUtill extends Config {
 	 * @return String value
 	 * @throws InterruptedException
 	 */
-	public String setTextBoxValue(WebElement we, String inputData) {
+	public String setTextBoxValue(WebElement we, String inputData, String fieldName) {
 		try {
-			we.clear();
 			we.sendKeys(inputData);
-			// BaseClass.test.log(Status.PASS, inputData+" is entered in text box");	
+	//		ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName + " ==> Entered value as: " + inputData);
 		} catch (NoSuchElementException e) {
-			logger.info(e);
 			holdOn(5);
-			we.clear();
 			we.sendKeys(inputData);
+//			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName + " ==> Entered value as: " + inputData);
 		} catch (Exception e) {
-			logger.info(e);
-			jsSetTextBoxValue(we, inputData);
+//			ExtentFactory.getInstance().getExtent().log(Status.FAIL,"Value enter in field: " + fieldName + " is failed due to exception: " + e);
 		}
-	//	BaseClass.test.info(inputData + " is entered in text box.");
-		BaseClass.test.log(Status.PASS, inputData + " is entered in text box.");
+
 		return inputData;
 	}
 
@@ -117,11 +113,17 @@ public class WebUtill extends Config {
 	 * @return String inner text of specified weElement.
 	 */
 
-	public String getText(WebElement element) {
+	public String getText(WebElement element, String elementName) {
 		return element.getText();
 	}
 
 	public void launchBrowser(String browserName) {
+		
+		
+//		ChromeOptions option =new ChromeOptions();
+//		option.addArguments("--remote-allow-origins=*");
+//		WebDriver driver =new ChromeDriver(option);
+		
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -195,11 +197,9 @@ public class WebUtill extends Config {
 			// driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
 			// capabilityFactory.getCapabilities(browser)));
 			driver.navigate().to(url);
-			logger.info(url + " opened successfully");
-		} catch (WebDriverException e) {
-			logger.debug("Error occured while opening url- " + url, e);
-		} catch (NullPointerException e) {
-			logger.debug("Error occured while opening url. webdriver object has null value - ", e);
+//			ExtentFactory.getInstance().getExtent().log(Status.PASS,url + " Opened Successfully");
+		} catch (Exception e) {
+//			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Unable to opened "+ url+" due to exception "+e);
 		}
 	}
 
@@ -220,7 +220,7 @@ public class WebUtill extends Config {
 		try {
 			driver.switchTo().defaultContent();
 		} catch (Exception e) {
-			logger.error("Unable to switch to main window " + e);
+		//	ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Unable to Switched Main window due to exception "+e);
 		}
 	}
 
@@ -233,7 +233,7 @@ public class WebUtill extends Config {
 		try {
 			driver.switchTo().parentFrame();
 		} catch (Exception e) {
-			logger.error("Parent frame unavailable");
+			//ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Unable to Switched Parent frame due to exception "+e);
 		}
 	}
 
@@ -346,7 +346,7 @@ public class WebUtill extends Config {
 		FileUtils.copyFile(scrFile, strFile);
 		// To add it in the extent report
 		Reporter.log("<a href='" + strFile.getAbsolutePath() + "'> <img src='" + strFile.getAbsolutePath()
-				+ "' height='100' width='100'/> </a>", true);
+		+ "' height='100' width='100'/> </a>", true);
 		BaseClass.test.log(Status.PASS, "<a href='" + strFile.getAbsolutePath() + "'> <img src='"
 				+ strFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
 
@@ -401,7 +401,6 @@ public class WebUtill extends Config {
 	 */
 	public void jsClick(WebElement element) {
 		getJSExecutor().executeScript("arguments[0].click()", element);
-		
 
 	}
 
