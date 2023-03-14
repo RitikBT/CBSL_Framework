@@ -2,7 +2,8 @@ package org.cbsl.pageObjects.pim;
 
 import java.awt.AWTException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,7 +42,7 @@ public class ContactDetailsPage {
 	@FindBy(xpath = "//input[@id='btnSaveAttachment']")
 	private WebElement uploadBtn;
 
-	private final Logger logger = Logger.getLogger(getClass());
+	private final Logger logger = LogManager.getLogger(getClass());
 
 	WebUtill utill;
 
@@ -52,20 +53,20 @@ public class ContactDetailsPage {
 
 	public void navigateToContactDetailPage() {
 		utill.jsScrollDownPage(250);
-		utill.click(contactDetailsBtn);
+		utill.click(contactDetailsBtn,"Contact ");
 	}
 
 	public void contactDetailsFields() {
-		utill.setTextBoxValue(editBoxAddressStreet1, "Kanpur, Phase-2, Silicon Road");
-		utill.setTextBoxValue(editBoxAddressStreet2, "Kanpur, Phase-2, Silicon Road");
-		utill.setTextBoxValue(editBoxCity, "Kanpur");
-		utill.setTextBoxValue(editBoxState, "UP");
-		utill.setTextBoxValue(editBoxZipCod, "110098");
+		utill.setTextBoxValue(editBoxAddressStreet1, "Kanpur, Phase-2, Silicon Road", "Street 1");
+		utill.setTextBoxValue(editBoxAddressStreet2, "Kanpur, Phase-2, Silicon Road", "Street 2");
+		utill.setTextBoxValue(editBoxCity, "Kanpur", "City");
+		utill.setTextBoxValue(editBoxState, "UP", "State");
+		utill.setTextBoxValue(editBoxZipCod, "110098","Pincode");
 		// utill.selectDropDownValue(selectCountry, "value", "IN");
-		utill.setTextBoxValue(editBoxTelephon, "9088776770");
-		utill.setTextBoxValue(editBoxMobile, "9876543210");
-		utill.setTextBoxValue(editBoxWorkEmail, "vikas" + utill.randomString(2) + "@gmail.com");
-		utill.click(saveBtn);
+		utill.setTextBoxValue(editBoxTelephon, "9088776770", "Telephone");
+		utill.setTextBoxValue(editBoxMobile, "9876543210", "Mobile");
+		utill.setTextBoxValue(editBoxWorkEmail, "vikas" + utill.randomString(2) + "@gmail.com", "Email");
+		utill.click(saveBtn, "Save");
 
 		logger.info("Contact details addedd........");
 
@@ -73,15 +74,15 @@ public class ContactDetailsPage {
 
 	public void uploadFile() {
 
-		utill.click(addAttachementBtn);
+		utill.click(addAttachementBtn,"Add attachement");
 		try {
-			utill.click(chooseFileBtn);
+			utill.click(chooseFileBtn, "File Button");
 			utill.holdOn(2);
 			utill.uploadFile("‪C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot.png");
 		} catch (AWTException e) {
 			e.printStackTrace();
 		}
-		utill.setTextBoxValue(commentBxfield, "Doc is uploaded......!!!!!");
-		utill.click(uploadBtn);
+		utill.setTextBoxValue(commentBxfield, "Doc is uploaded......!!!!!", "Comment");
+		utill.click(uploadBtn, "Upload");
 	}
 }

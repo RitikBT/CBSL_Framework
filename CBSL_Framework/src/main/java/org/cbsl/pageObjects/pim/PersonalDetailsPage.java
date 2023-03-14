@@ -1,7 +1,9 @@
 package org.cbsl.pageObjects.pim;
 
 import java.awt.AWTException;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.cbsl.utility.WebUtill;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,11 +28,12 @@ public class PersonalDetailsPage {
 	@FindBy(id="btnAddAttachment") private WebElement btnAddAttachment;
 	@FindBy(xpath= "//input[@id='ufile']") private WebElement chooseFileBtn;
 	@FindBy(xpath = "//input[@id='btnSaveAttachment']") private WebElement uploadBtn; 
+	@FindBy(xpath = "//span[text()='Turkish']") private WebElement country;
+
+	//(//div[contains(text(),'-- Select --')])[1] //label[contains(text(),'Nationality')]//following::div[@class='oxd-select-text-input'][1]
 
 
-
-
-	private final  Logger logger=Logger.getLogger(PersonalDetailsPage.class);
+	public final static Logger logger=LogManager.getLogger();
 
 
 	WebUtill utill;
@@ -41,58 +44,62 @@ public class PersonalDetailsPage {
 
 	}
 
+	public void selectNationality() {
+		utill.click(seleNationality, "Nationality");
+		utill.click(country, "Nation");
+	}
 
 
 	public void clickEditbtn() {
-		utill.click(btnEdit_Save);	
+		utill.click(btnEdit_Save,"Save");	
 	}
 
 	public void enterLicenNumber(String licenNumber) {
 	//	utill.clear(txtDLNumber);
-		utill.setTextBoxValue(txtDLNumber, licenNumber);
+		utill.setTextBoxValue(txtDLNumber, licenNumber,"DL Number");
 	}
 
 	public void enterLicenExpDate(String yyyy_mm_dd_ExpDate) {
-		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate);
+		utill.setTextBoxValue(txtDLExpDate, yyyy_mm_dd_ExpDate,"Expiary Date");
 		
 	}
 
 	public void enterSSN_Number(String ssnString ) {
 		utill.clear(txtSSNNumber);
-		utill.setTextBoxValue(txtSSNNumber, ssnString);
+		utill.setTextBoxValue(txtSSNNumber, ssnString, "SSN Number");
 	}
 
 	public void enterSIN_Number(String sin_Num) {
 		utill.clear(txtSINNum);
-		utill.setTextBoxValue(txtSINNum, sin_Num);
+		utill.setTextBoxValue(txtSINNum, sin_Num,"SIN Number");
 	}
 
 	public void selectGender(char select_M_Or_F) {
 		
 		switch (select_M_Or_F) {
 		case 'M':
-			utill.click(selMale);
+			utill.click(selMale,"Gender");
 			break;
 		case 'F':
-			utill.click(selFemale);
+			utill.click(selFemale," Gender");
 		default:
 			System.out.println("Please Enter M or F");
 		}
 	}
 
 	public void enterDOB(String yyyy_mm_dd_selDOB) {
-		utill.setTextBoxValue(txtDOB, yyyy_mm_dd_selDOB);
+		utill.setTextBoxValue(txtDOB, yyyy_mm_dd_selDOB,"DOB");
 	}
 
 	public void enterNickName(String nickName) {
 		utill.clear(txtNickName);
-		utill.setTextBoxValue(txtNickName, nickName);;
+		utill.setTextBoxValue(txtNickName, nickName,"Nick Name");;
 	}
 
 	public void selChkBxSmoker(char sel_Y_or_N) {
 		switch(sel_Y_or_N) {
 		case 'Y':
-			utill.click(chkbxSmoker);
+			utill.click(chkbxSmoker,"Smoker");
 			logger.info("Smoker Check Box is selected...");
 			break;
 		case 'N':
@@ -104,7 +111,7 @@ public class PersonalDetailsPage {
 	}
 
 	public void clickOnSavebtn() {
-		utill.click(btnEdit_Save);
+		utill.click(btnEdit_Save, "Save");
 
 		logger.info("Personal Details added successfully....");
 	}
@@ -112,7 +119,7 @@ public class PersonalDetailsPage {
 
 
 	public void bloodType(String bloodType) {
-		utill.click(btEdit_CustomField);
+		utill.click(btEdit_CustomField,"Blood");
 		utill.selectDropDownValue(bloodTypeDropDown, "value", bloodType);
 		logger.info("Blood type addedd  "+ bloodType);
 
@@ -121,13 +128,13 @@ public class PersonalDetailsPage {
 	public void fileUpload() throws AWTException, Exception {
 
 		//	utill.jsUtil.scrollUpPage(2000);
-		utill.click(btnAddAttachment);
+		utill.click(btnAddAttachment, "Add ");
 		Thread.sleep(3000);
-		utill.click(chooseFileBtn);
+		utill.click(chooseFileBtn, "Choose");
 
 		utill.uploadFile("C:\\Users\\288568\\Pictures\\Screenshots\\Screenshot.png");
 
-		utill.click(uploadBtn);
+		utill.click(uploadBtn, "Upload");
 
 	}
 

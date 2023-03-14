@@ -17,7 +17,6 @@
 				<methods>
 					<include name="testcase001_loginTest" />
 				</methods>
-
 			</class>
 		</classes>
 	</test>
