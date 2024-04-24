@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Dimension;
@@ -26,6 +26,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -36,6 +37,7 @@ import org.testng.Reporter;
 import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.config.DriverManagerType;
 
 public class WebUtill extends Config {
 
@@ -120,13 +122,17 @@ public class WebUtill extends Config {
 	public void launchBrowser(String browserName) {
 		
 		
-//		ChromeOptions option =new ChromeOptions();
-//		option.addArguments("--remote-allow-origins=*");
+		ChromeOptions option =new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
 //		WebDriver driver =new ChromeDriver(option);
-		
+		WebDriverManager manager;
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			manager = WebDriverManager.getInstance(DriverManagerType.CHROME);
+			manager.clearResolutionCache();
+			manager.clearDriverCache();
+			manager.setup();
+			manager.chromedriver().setup();
+			driver = new ChromeDriver(option);
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.chromedriver().setup();
@@ -136,6 +142,10 @@ public class WebUtill extends Config {
 			WebDriverManager.operadriver().setup();
 			driver = new OperaDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
+			manager = WebDriverManager.getInstance(DriverManagerType.EDGE);
+			manager.clearResolutionCache();
+			manager.clearDriverCache();
+			manager.setup();
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		} else
