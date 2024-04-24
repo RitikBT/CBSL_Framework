@@ -1,1 +1,13 @@
 /target/
+/src/main/resources/envConfig.json
+/test-output/
+/build/
+/*.classpath
+/*.project
+/*.settings
+**.DS_Store
+/.idea/
+node_modules
+/src/main/resources/exportFiles/*.csv
+/src/main/resources/downloads/*
+/src/main/resources/pemFiles/*
