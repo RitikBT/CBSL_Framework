@@ -11,3 +11,4 @@ node_modules
 /src/main/resources/exportFiles/*.csv
 /src/main/resources/downloads/*
 /src/main/resources/pemFiles/*
+/.metadata/
