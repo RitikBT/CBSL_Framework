@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'build App'
+            }
+        }
+         stage('Test') {
+            steps {
+                echo 'Test App'
+            }
+        }
+         stage('Deploy') {
+            steps {
+                echo 'Deploy App'
+            }
+        }
+    }
+    post{
+        always{
+            emailext body: '''Hello Ritik,
+
+Please find pipeline status''', subject: 'Pipeline Status', to: 'ritik.yadav.testcrew@gmail.com'
+        }
+    }
+}
